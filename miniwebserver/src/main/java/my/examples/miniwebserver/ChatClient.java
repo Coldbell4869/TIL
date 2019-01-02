@@ -26,6 +26,8 @@ public class ChatClient {
             String nickName = br.readLine();
             chatUser.setNickname(nickName);
             chatUser.write(nickName); // 왜 ChatServerHandeler에서 했는데 nickName 또?
+            System.out.println("닉네임 : "+ nickName);
+            System.out.println("/help로 명령어 확인이 가능합니다.");
 
             ChatClientHandler chatClientHandler = new ChatClientHandler(chatUser);
             chatClientHandler.start();

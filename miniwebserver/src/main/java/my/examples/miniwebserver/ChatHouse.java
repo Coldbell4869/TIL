@@ -14,6 +14,7 @@ public class ChatHouse {
     }
 
     public void createRoom(ChatUser chatUser, String title){
+
         ChatRoom chatRoom = new ChatRoom(chatUser, title);
         chatRooms.add(chatRoom);
     }
@@ -48,7 +49,13 @@ public class ChatHouse {
     }
 
     public void joinRoom(int roomNum, ChatUser chatUser) {
+
         ChatRoom chatRoom = chatRooms.get(roomNum);
         chatRoom.addChatUser(chatUser);
     }
+
+    public void quitRoom(ChatUser chatUser){
+        chatRooms.remove(chatUser);
+    }
+
 }

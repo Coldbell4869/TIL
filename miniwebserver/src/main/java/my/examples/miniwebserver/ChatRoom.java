@@ -37,4 +37,9 @@ public class ChatRoom {
     public void addChatUser(ChatUser chatUser) {
         chatUsers.add(chatUser);
     }
+
+    public void removeChatUser(ChatUser chatUser) {
+        chatUsers.remove(chatUser);
+    }
+
 }

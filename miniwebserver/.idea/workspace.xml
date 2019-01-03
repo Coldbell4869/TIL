@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73574c5-af85-4d8e-8df9-a88bea98d92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatRoom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatRoom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatHouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatHouse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatRoom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatRoom.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatServerHandler.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,82 +29,12 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-                <element signature="e#626#627#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#1154#1155#0" expanded="true" />
-                <element signature="e#1186#1187#0" expanded="true" />
-                <element signature="e#1390#1391#0" expanded="true" />
-                <element signature="e#1432#1433#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatRoom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#446#447#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#557#558#0" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#767#768#0" expanded="true" />
-                <element signature="e#809#810#0" expanded="true" />
-                <element signature="e#859#860#0" expanded="true" />
-                <element signature="e#898#899#0" expanded="true" />
-                <element signature="e#951#952#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
-              <caret line="49" column="58" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="299">
+              <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding>
                 <element signature="e#162#163#0" expanded="true" />
                 <element signature="e#202#203#0" expanded="true" />
@@ -118,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+            <state relative-caret-position="276">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,10 +56,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+            <state relative-caret-position="136">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -143,25 +71,16 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -214,7 +133,6 @@
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BOJ7287.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Dog.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java" />
@@ -229,6 +147,11 @@
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxMain.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box2.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java" />
       </list>
     </option>
   </component>
@@ -296,7 +219,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546430023956" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546505559420" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -324,7 +247,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ChatServerMain">
+  <component name="RunManager" selected="Application.ChatClientMain">
+    <configuration name="BoxMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="my.examples.miniwebserver.BoxMain" />
+      <module name="miniwebserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="my.examples.miniwebserver.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChatClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="my.examples.miniwebserver.ChatClientMain" />
       <module name="miniwebserver" />
@@ -377,26 +313,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="my.examples.miniwebserver.server.MainServer" />
-      <module name="miniwebserver" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="my.examples.miniwebserver.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ChatClientMain" />
         <item itemvalue="Application.ChatServerMain" />
+        <item itemvalue="Application.BoxMain" />
         <item itemvalue="Application.ChatClientMain2" />
         <item itemvalue="Application.MainClient" />
-        <item itemvalue="Application.MainServer (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -417,7 +340,10 @@
       <workItem from="1546415759449" duration="2302000" />
       <workItem from="1546419123279" duration="1263000" />
       <workItem from="1546421550810" duration="1581000" />
-      <workItem from="1546424351891" duration="4996000" />
+      <workItem from="1546424351891" duration="7194000" />
+      <workItem from="1546485051611" duration="98000" />
+      <workItem from="1546485603560" duration="1566000" />
+      <workItem from="1546504252549" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="웹서버 1단계">
       <created>1546165163763</created>
@@ -465,13 +391,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47902000" />
+    <option name="totallyTimeSpent" value="52308000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.26895565" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.23175965" />
       <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.26895565" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -481,12 +406,12 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32769832" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35240573" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35240573" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32899868" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="CheckStyle" order="9" weight="0.32899868" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
@@ -563,6 +488,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -722,41 +661,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="61" column="37" selection-start-line="61" selection-start-column="37" selection-end-line="61" selection-end-column="37" />
+        <state relative-caret-position="276">
+          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Box2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/BoxMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="299">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ConversationServer/ConversationServer/src/main/java/ConServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#162#163#0" expanded="true" />
-            <element signature="e#202#203#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="208">
+          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#1154#1155#0" expanded="true" />
-            <element signature="e#1186#1187#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,14 +714,24 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHouse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatRoom.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
+        <state relative-caret-position="685">
+          <caret line="40" column="49" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#446#447#0" expanded="true" />
@@ -792,20 +752,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="29" column="53" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
+        <state relative-caret-position="-234">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding>
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="34" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="276">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -815,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -823,16 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="49" column="58" selection-start-line="49" selection-start-column="50" selection-end-line="49" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

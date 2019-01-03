@@ -4,7 +4,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.net.Socket;
 
-public class ChatUser {
+public class ChatUser { // 유저는 닉네임을 반드시 가지고 있고 소켓을 통해 data를 input, output한다.
     private String nickname;
     private Socket socket;
     private DataInputStream in;

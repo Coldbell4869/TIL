@@ -32,6 +32,7 @@ public class ChatServerHandler extends Thread {
                                     "/join [방 번호] 해당 번호의 방으로 들어갑니다. \n /out (방 안에서 입력 시) 채팅방에서 나옵니다.");
                         }
                         if(message.indexOf("/create") == 0){
+
                             String title = message.substring(message.indexOf(" ") +1);
                             chatHouse.createRoom(chatUser, title);
                             chatUser.write(title + " 방에 입장하셨습니다.");

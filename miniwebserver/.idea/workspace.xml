@@ -2,22 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73574c5-af85-4d8e-8df9-a88bea98d92b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatClientHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatClientMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatHouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatRoom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatServerMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/Cat/CatUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatClientMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServerMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatClientMain.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatServerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/miniwebserver/ChatServerMain.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,7 +22,17 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="22" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -140,6 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Default Changelist'; set:Default Changelist; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -232,19 +230,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="miniwebserver" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -385,6 +374,8 @@
       <workItem from="1546596268154" duration="3000" />
       <workItem from="1546771182607" duration="4918000" />
       <workItem from="1546777989450" duration="695000" />
+      <workItem from="1546916025447" duration="27000" />
+      <workItem from="1546917710216" duration="16000" />
     </task>
     <task id="LOCAL-00001" summary="웹서버 1단계">
       <created>1546165163763</created>
@@ -432,12 +423,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60798000" />
+    <option name="totallyTimeSpent" value="60841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.2453505" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.25608012" />
       <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.26895565" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -555,13 +547,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="채팅방 만들기" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/FileInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="956">
-          <caret line="140" column="7" lean-forward="true" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ExceptionExam.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ByteExam1.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatHandler.java" />
@@ -909,6 +894,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="22" selection-end-column="12" />
         </state>
       </provider>
     </entry>

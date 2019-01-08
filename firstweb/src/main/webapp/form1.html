@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>게시글 목록</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container table-bordered" style="padding-top: 15px;">
+    <form>
+        <div class="form-group">
+            <label for="Name">작성자</label>
+            <input type="text" class="form-control" id="Name" placeholder="작성자 이름을 입력하세요. ">
+        </div>
+
+        <div class="form-group">
+            <label for="checkboxes">체크박스</label>
+            <div class="checkbox" id="checkboxes">
+                <label>
+                    <input type="checkbox" name="checkboxes" id="checkbox1" value="checkbox1">
+                    그냥&nbsp;
+                </label>
+                <label for="checkbox2">
+                    <input type="checkbox" name="checkboxes" id="checkbox2" value="checkbox2">
+                    넣어본&nbsp;
+                </label>
+                <label for="checkbox3">
+                    <input type="checkbox" name="checkboxes" id="checkbox3" value="checkbox3">
+                    체크박스&nbsp;
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="Radios">라디오버튼</label>
+            <div class="radio" id="Radios">
+                <label for="Radios1">
+                    <input type="radio" name="Radios" id="Radios1" value="radio1" checked>
+                    라&nbsp;
+                </label>
+                <label for="Radios2">
+                    <input type="radio" name="Radios" id="Radios2" value="radio2">
+                    디오&nbsp;
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+        <label for="Password">비밀번호</label>
+            <input type="password" class="form-control" id="Password" placeholder="비밀번호를 입력하세요. (게시글 수정,삭제 시 사용) ">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">제목</label>
+            <input type="text" class="form-control" id="Title" placeholder="제목을 입력하세요. ">
+        </div>
+
+        <div class="form-group">
+            <label for="Contents">내용</label>
+            <textarea class="form-control" rows="5" id="Contents" placeholder="내용을 입력하세요. "></textarea>
+        </div>
+        <button type="cancel" class="pull-right btn btn-default">작성 취소</button>
+        <button type="submit" class="pull-right btn btn-default">작성 완료</button>
+    </form>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

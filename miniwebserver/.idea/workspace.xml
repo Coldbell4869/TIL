@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a73574c5-af85-4d8e-8df9-a88bea98d92b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../firstweb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstweb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,12 +22,24 @@
     </option>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
               <caret line="18" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="22" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/WebServer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,6 +69,8 @@
       <find>add</find>
       <find>con</find>
       <find>Con</find>
+      <find>post</find>
+      <find>get</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -124,9 +138,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="720" />
+    <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -229,6 +243,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniwebserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miniwebserver" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miniwebserver" type="462c0819:PsiDirectoryNode" />
+              <item name="WebServer.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -376,6 +407,7 @@
       <workItem from="1546777989450" duration="695000" />
       <workItem from="1546916025447" duration="27000" />
       <workItem from="1546917710216" duration="16000" />
+      <workItem from="1546961427214" duration="54000" />
     </task>
     <task id="LOCAL-00001" summary="웹서버 1단계">
       <created>1546165163763</created>
@@ -423,13 +455,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60841000" />
+    <option name="totallyTimeSpent" value="60895000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.25608012" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.25965664" />
       <window_info id="Structure" order="1" sideWeight="0.502008" side_tool="true" weight="0.26895565" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -679,16 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/WebServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/ChatServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -901,6 +923,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="18" column="23" selection-start-line="10" selection-start-column="4" selection-end-line="22" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/miniwebserver/WebServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

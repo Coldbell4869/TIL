@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "AplusB", urlPatterns = "/aplusb")
+@WebServlet(name = "AplusB", urlPatterns = "/plus")
 public class AplusB extends HttpServlet {
     public AplusB(){
         System.out.println("AplusB()");

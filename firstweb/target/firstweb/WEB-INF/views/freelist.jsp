@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<%@ page contentType="text/html;charset=UTF-8" language="Java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <html lang="ko">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>게시글 목록</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container table-bordered" style="padding-top: 15px;">
@@ -22,41 +24,15 @@
 
         </thead>
         <tbody>
+        <c:forEach items="${requestScope.freelist}" var="free">
         <tr>
-            <th scope="row">5</th>
-            <td>둘리 게시글 123567890</td>
-            <td>둘리</td>
-            <td>2019.01.07</td>
-            <td>261</td>
+            <th scope="row">${free.id}</th>
+            <td><a href="http://localhost8080/free/read">${free.title}</a></td>
+            <td>${free.name}</td>
+            <td>${free.regdate}</td>
+            <td>${free.viewcount}</td>
         </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>도우너 게시글 "ㅌ@'</td>
-            <td>도우너</td>
-            <td>2019.01.06</td>
-            <td>153</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>또치 게시글 %^&</td>
-            <td>또치</td>
-            <td>2019.01.05</td>
-            <td>93</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>고길동 게시글 !@#</td>
-            <td>고길동</td>
-            <td>2019.01.03</td>
-            <td>112</td>
-        </tr>
-        <tr>
-            <th scope="row">1</th>
-            <td>마이콜 게시글 1234</td>
-            <td>마이콜</td>
-            <td>2019.01.01</td>
-            <td>92</td>
-        </tr>
+        </c:forEach>
         </tbody>
     </table>
 
@@ -72,6 +48,6 @@
 
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

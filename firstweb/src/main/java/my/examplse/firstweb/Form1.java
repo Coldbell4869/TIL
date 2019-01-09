@@ -2,9 +2,11 @@ package my.examplse.firstweb;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 
-
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,12 +20,7 @@ public class Form1 extends HttpServlet {
     }
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doGet");
-    }
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println("doPost");
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         req.setCharacterEncoding("UTF-8");
 
@@ -59,13 +56,4 @@ public class Form1 extends HttpServlet {
         out.close();
     }
 
-    @Override
-    public void destroy() {
-        System.out.println("----- destroy -----");
-    }
-
-    @Override
-    public void init() throws ServletException {
-        System.out.println("----- init -----");
-    }
 }

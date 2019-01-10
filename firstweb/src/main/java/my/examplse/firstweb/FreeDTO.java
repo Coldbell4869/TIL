@@ -7,13 +7,13 @@ public class FreeDTO {
 
     private long id;
     private String name;
-    private String[] checkbox;
-    private String radio;
+    private String[] checkbox; // checkbox1, checkbox2, checkbox3
+    private String radio; // radio1 ,radio2
     private String password;
     private String title;
     private String contents;
-    private LocalDate regdate;
-    private long viewcount;
+    private LocalDate regdate; // mysql db에서는 date
+    private long viewcount; // mysql db에서는 view
 
     public FreeDTO(){
         regdate = LocalDate.now();

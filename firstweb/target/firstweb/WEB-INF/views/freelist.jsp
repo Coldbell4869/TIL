@@ -24,10 +24,10 @@
 
         </thead>
         <tbody>
-        <c:forEach items="${requestScope.freelist}" var="free">
         <tr>
-            <th scope="row">${free.id}</th>
-            <td><a href="http://localhost8080/free/read">${free.title}</a></td>
+            <c:forEach items="${requestScope.freelist}" var="free">
+            <td scope="row" class = board>${free.id}</td>
+            <td><a href = "/free/read">${free.title}</a></td>
             <td>${free.name}</td>
             <td>${free.regdate}</td>
             <td>${free.viewcount}</td>
@@ -36,7 +36,7 @@
         </tbody>
     </table>
 
-    <a class="btn pull-right btn-default">글쓰기</a>
+    <a class="btn pull-right btn-default" href="http://localhost:8080/freewrite.jsp">글쓰기</a>
 
     <ul class="pull-left pagination">
         <li class="active"><a href="#">1</a></li>

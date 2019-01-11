@@ -1,4 +1,4 @@
-<%@ page contentType="text/html;charset=UTF-8" language="Java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <html lang="ko">
@@ -13,7 +13,6 @@
 <div class="container table-bordered" style="padding-top: 15px;">
     <table class="table table-striped">
         <thead>
-
         <tr>
             <th scope="col">번호</th>
             <th scope="col">제목</th>
@@ -21,22 +20,21 @@
             <th scope="col">날짜</th>
             <th scope="col">조회수</th>
         </tr>
-
         </thead>
         <tbody>
-        <tr>
-            <c:forEach items="${requestScope.freelist}" var="free">
-            <td scope="row" class = board>${free.id}</td>
-            <td><a href = "/free/read">${free.title}</a></td>
-            <td>${free.name}</td>
-            <td>${free.regdate}</td>
-            <td>${free.viewcount}</td>
-        </tr>
+        <c:forEach items="${requestScope.freelist}" var="free">
+            <tr>
+                <td scope="row" class = board><a href="/free/read?id=${free.id}">${free.id}</a></td>
+                <td><a href="/free/read?id=${free.id}">${free.title}</a></td>
+                <td><a href="/free/read?id=${free.id}">${free.name}</a></td>
+                <td><a href="/free/read?id=${free.id}">${free.regdate}</a></td>
+                <td><a href="/free/read?id=${free.id}">${free.viewcount}</a></td>
+           </tr>
         </c:forEach>
         </tbody>
     </table>
 
-    <a class="btn pull-right btn-default" href="http://localhost:8080/freewrite.jsp">글쓰기</a>
+    <a class="btn pull-right btn-default" href="http://localhost:8080/write.html">글쓰기</a>
 
     <ul class="pull-left pagination">
         <li class="active"><a href="#">1</a></li>

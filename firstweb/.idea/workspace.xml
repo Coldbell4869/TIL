@@ -7,59 +7,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4759574-14db-4f0c-a245-062a9863e42f" name="Default Changelist" comment="servlet jsp">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/FreeReadServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/AplusB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/AplusB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/BoardListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/BoardListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/CookieGetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/CookieGetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/CookieSetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/CookieSetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/DabinChoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/DabinChoi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/Form1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/Form1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/ForwardServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/ForwardServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/FreeDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/FreeDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/FreeListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/FreeListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/RedirectServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/RedirectServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/ResultServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/ResultServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/SessionGetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/SessionGetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/SessionSetServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/SessionSetServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examplse/firstweb/Star.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/firstweb/Star.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freelist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freelist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/read.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeread.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/firstweb/SessionGetServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/firstweb/SessionGetServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/AplusB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/BoardListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/CookieSetServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/DabinChoi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/Form1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/ForwardServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/FreeDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/FreeListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/RedirectServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/ResultServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examplse/firstweb/Star.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/firstweb/SessionGetServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/firstweb/SessionGetServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/AplusB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/Board.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/BoardListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/CookieSetServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/DabinChoi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/Form1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/ForwardServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/FreeDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/FreeListServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/HelloServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/RedirectServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/ResultServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examplse/firstweb/Star.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/freelist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/freelist.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/read.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
     </list>
@@ -79,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/firstweb/FreeReadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+            <state relative-caret-position="243">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
             </state>
           </provider>
         </entry>
@@ -474,7 +421,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547180640319" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547387131218" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -613,7 +560,7 @@
       <workItem from="1546956817117" duration="23354000" />
       <workItem from="1547030423434" duration="6543000" />
       <workItem from="1547081888805" duration="3293000" />
-      <workItem from="1547105586388" duration="12575000" />
+      <workItem from="1547105586388" duration="12853000" />
     </task>
     <task id="LOCAL-00001" summary="servlet jsp">
       <created>1547016731738</created>
@@ -626,7 +573,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53425000" />
+    <option name="totallyTimeSpent" value="53703000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
@@ -1079,8 +1026,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/firstweb/FreeReadServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="34" column="13" lean-forward="true" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        <state relative-caret-position="243">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>

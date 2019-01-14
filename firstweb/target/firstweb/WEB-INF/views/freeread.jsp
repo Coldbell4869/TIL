@@ -17,7 +17,7 @@
             <h3 class="panel-title">작성자</h3>
         </div>
         <div class="panel-body">
-            ${freeview.getName}
+            ${freeview.name}
         </div>
     </div>
     <div class="panel panel-default">

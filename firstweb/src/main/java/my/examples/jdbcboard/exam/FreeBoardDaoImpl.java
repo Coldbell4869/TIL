@@ -17,7 +17,11 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
         try {
             // a. DB 연결 - Connection
             //    DB 연결을 하려면 필요한 정보가 있다. Driver classname, DB URL, DB UserId, DB User Password
-            conn = DBUtil.getConnection();
+
+            // >> HikariCP에 맞도록 conn 변경
+            conn = DBUtil.getInstance().getConnection();
+
+//            conn = DBUtil.getConnection();
 
             // b. SELECT SQL 준비 - Connection
             String sql = "SELECT id, title, uname, content, regdate, readcount, family, level, sequence FROM freepost LEFT JOIN freeuser ON freeuser.uname = freepost.name where id =?";
@@ -62,7 +66,12 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
         try {
             // a. DB 연결 - Connection
             //    DB연결을 하려면 필요한 정보가 있다. Driver classname, DB URL, DB UserId , DB User Password
-            conn = DBUtil.getConnection();
+
+            // >> HikariCP에 맞도록 conn 변경
+            conn = DBUtil.getInstance().getConnection();
+
+//            conn = DBUtil.getConnection();
+
             if (conn != null) {
                 System.out.println("conn ok!");
                 System.out.println(conn.getClass().getName());

@@ -19,7 +19,7 @@ public class ViewFreeServlet extends HttpServlet {
         String idStr = req.getParameter("id");
         long id = 0;
         try{
-            id = Integer.parseInt(idStr);
+            id = Long.parseLong(idStr);
         }catch(Exception ex){
             // 오류 화면으로 redirect
             return;

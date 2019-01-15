@@ -20,7 +20,7 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
             conn = DBUtil.getConnection();
 
             // b. SELECT SQL 준비 - Connection
-            String sql = "select id,title,name,content,regdate,readcount,family,level,sequence from freepost where id = ?";
+            String sql = "SELECT id, title, uname, content, regdate, readcount, family, level, sequence FROM freepost LEFT JOIN freeuser ON freeuser.uname = freepost.name where id =?";
             ps = conn.prepareStatement(sql);
 
             // c. 바인딩 - PreparedStatement
@@ -68,7 +68,7 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
                 System.out.println(conn.getClass().getName());
             }
             // b. SELECT SQL 준비 - Connection
-            String sql = "SELECT id, title, name, content, regdate, readcount, family, level, sequence FROM freepost ORDER BY id DESC LIMIT ?, ?";
+            String sql = "SELECT id, title, uname, content, regdate, readcount, family, level, sequence FROM freepost LEFT JOIN freeuser ON freeuser.uname = freepost.name ORDER BY id DESC LIMIT ?, ?";
             ps = conn.prepareStatement(sql);
             // c. 바인딩 - PreparedStatement
             ps.setLong(1, start); // 첫번째 물음표에 start를,
@@ -79,7 +79,7 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
 
             // e. 1건의 row를 읽어온다. row는 여러개의 컬럼으로 구성되어 있다. - ResultSet
             // f. e에서 읽어오지 못하는 경우도 있다.
-            while (rs.next()) {   // 리스트는 while문으로..
+            while (rs.next()) {   // 리스트는 while문으로.. // ResultSet의 next() 메소드.
                 long id = rs.getLong(1);
                 String title = rs.getString(2);
                 String name = rs.getString(3);

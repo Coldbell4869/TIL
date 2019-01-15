@@ -43,7 +43,7 @@ public class SelectListExam {
             ps = conn.prepareStatement(sql);
             // c. 바인딩 - PreparedStatement
             ps.setLong(1, start); // 첫번째 물음표에 start를,
-            ps.setInt(2, limit); // 두번째 물음표에 limit를 바인딩한다.
+            ps.setLong(2, limit); // 두번째 물음표에 limit를 바인딩한다.
 
             // d. SQL 실행 - PreparedStatement
             rs = ps.executeQuery(); // SELECT 문장을 실행, executeUpdate() - insert, update, delete

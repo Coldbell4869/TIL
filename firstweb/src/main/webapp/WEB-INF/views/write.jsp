@@ -1,38 +1,38 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<html lang="ko">
+<html>
 <head>
+    <title>글 작성</title>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>게시글 목록</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-kW2H6mf/72/MKlmwB//Zcwg0ckiegojPx/fio14/rpoYw2LMhULTn5YhS1QyrQfx" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container table-bordered" style="padding-top: 15px;">
-    <form>
+<form action="/write" method="post">
+<div class="container" style="padding-top: 15px;">
+    <div class="content">
         <div class="form-group">
-            <label for="Name">작성자</label>
-            <input type="text" class="form-control" id="Name" placeholder="작성자 이름을 입력하세요. ">
+            <label for="name">작성자</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="작성자 이름을 입력하세요. ">
         </div>
         <div class="form-group">
-            <label for="Password">비밀번호</label>
-            <input type="password" class="form-control" id="Password" placeholder="비밀번호를 입력하세요. (게시글 수정,삭제 시 사용) ">
+            <label for="title">제목</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="제목을 입력하세요. ">
         </div>
         <div class="form-group">
-            <label for="Title">제목</label>
-            <input type="text" class="form-control" id="Title" placeholder="제목을 입력하세요. ">
+            <label for="content">내용</label>
+            <textarea class="form-control" rows="5" id="content" name="content" placeholder="내용을 입력하세요. "></textarea>
         </div>
-        <div class="form-group">
-            <label for="Comment">내용</label>
-            <textarea class="form-control" rows="5" id="Comment"></textarea>
+        <div class="buttons" style="float:right;">
+            <button type="button" class="btn btn-outline-secondary" onClick="location.href='/list'">취소</button>
+            <button type="submit" class="btn btn-outline-secondary">등록</button>
         </div>
-        <button type="cancel" class="pull-right btn btn-default">작성 취소</button>
-        <button type="submit" class="pull-right btn btn-default">작성 완료</button>
-    </form>
+    </div>
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 </body>
+
 </html>

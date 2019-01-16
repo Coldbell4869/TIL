@@ -2,7 +2,7 @@ package my.examples.jdbcboard.exam;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import my.examples.firstweb.FreeBoard;
+import my.examples.jdbcboard.dto.FreeBoard;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

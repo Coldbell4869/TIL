@@ -1,7 +1,5 @@
 package my.examples.jdbcboard.servlet;
 
-import my.examples.jdbcboard.dao.FreeBoardDao;
-import my.examples.jdbcboard.dao.FreeBoardDaoImpl;
 import my.examples.jdbcboard.dto.FreeBoard;
 import my.examples.jdbcboard.service.FreeBoardService;
 import my.examples.jdbcboard.service.FreeBoardServiceImpl;
@@ -15,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name="ListServlet", urlPatterns = "/list")
+@WebServlet(name = "ListServlet", urlPatterns = "/list")
 public class ListServlet extends HttpServlet {
     private static final int SIZE = 3; // 설정파일에서 읽어들이도록 수정한다.
     @Override
@@ -25,20 +23,20 @@ public class ListServlet extends HttpServlet {
         int page = 1;
         try{
             page = Integer.parseInt(pageStr);
-        }catch(Exception igonre){}
+        }catch(Exception ignore){}
         // 2. 1페이지란 0부터 시작하여 3건을 의미한다.
-//        long start = page * SIZE -SIZE;
-//        long limit = SIZE;
+
+        int start = page * SIZE -SIZE;
+        int limit = SIZE;
+
         FreeBoardService freeBoardService = new FreeBoardServiceImpl();
         List<FreeBoard> freeboards = freeBoardService.getFreeBoards(page);
-        // 3. DB에서 목록을 읽어들인다.
-//        FreeBoardDao freeBoardDao = new FreeBoardDaoImpl();
-//        List<FreeBoard> freeboards = freeBoardDao.getFreeBoards(start, limit);
-        // 4. request에 3에서 구한 값을 setAttribute로 담아서 jsp에게 전달한다.
+        // 4. request에 3에서 구한값을 setAttribute로 담아서 jsp에게 전달한다.
         req.setAttribute("freeboards", freeboards);
         // 5. jsp에서는 jstl과 el로 결과를 출력한다.
 
-        RequestDispatcher requestDispatcher = req.getRequestDispatcher("/WEB-INF/views/list.jsp");
+        RequestDispatcher requestDispatcher =
+                req.getRequestDispatcher("/WEB-INF/views/list.jsp");
         requestDispatcher.forward(req, resp);
     }
 }

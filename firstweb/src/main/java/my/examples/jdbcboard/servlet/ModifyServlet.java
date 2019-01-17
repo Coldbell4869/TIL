@@ -61,7 +61,7 @@ public class ModifyServlet extends HttpServlet {
         } catch (Exception ex) {
         }
         FreeBoardDao boardDao = new FreeBoardDaoImpl();
-        boardDao.updateBoard(name, title, content, id);
+//        boardDao.updateBoard(name, title, content, id);
         resp.sendRedirect("list");
     }
 }

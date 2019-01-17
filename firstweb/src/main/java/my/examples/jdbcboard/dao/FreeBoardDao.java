@@ -14,9 +14,6 @@ public interface FreeBoardDao {
     void deleteBoard(Long id);
 
     void updateReadCount(long id);
-
-    void updateBoard(String name, String title, String content, long id);
-
 }
 
 

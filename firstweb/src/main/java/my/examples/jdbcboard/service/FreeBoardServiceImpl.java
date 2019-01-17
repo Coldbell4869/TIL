@@ -7,12 +7,11 @@ import my.examples.jdbcboard.dao.FreeBoardDao;
 import my.examples.jdbcboard.dao.FreeBoardDaoImpl;
 
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FreeBoardServiceImpl implements FreeBoardService{
-    public static final int SIZE = 3;
+    public static final int SIZE = 5;
 
     @Override
     public List<FreeBoard> getFreeBoards(int page) {
@@ -21,16 +20,11 @@ public class FreeBoardServiceImpl implements FreeBoardService{
         int limit = SIZE;
 
         List<FreeBoard> freeBoards = new ArrayList<>();
-        Connection conn = null;
-
-        try{
-            conn = DBUtil.getInstance().getConnection();
+        try(Connection conn = DBUtil.getInstance().getConnection();){
             ConnectionContextHolder.setConnection(conn);
             freeBoards = freeBoardDao.getFreeBoards(start, limit);
         }catch(Exception ex){
             ex.printStackTrace();
-        }finally{
-            DBUtil.close(conn);
         }
         return freeBoards;
     }

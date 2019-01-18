@@ -32,8 +32,8 @@ public class UserJoinServlet extends HttpServlet {
         req.setCharacterEncoding("UTF-8");
         String name = req.getParameter("name");
         String email = req.getParameter("email");
-        String passwd1 = req.getParameter("passwd1");
-        String passwd2 = req.getParameter("passwd2");
+        String passwd = req.getParameter("passwd");
+//        String passwd2 = req.getParameter("passwd2");
 
 
         // 실제 값을 검사
@@ -47,7 +47,7 @@ public class UserJoinServlet extends HttpServlet {
                 PasswordEncoderFactories.createDelegatingPasswordEncoder();
 
         // 암호화 하는 코드
-        String encodePasswd = passwordEncoder.encode(passwd1);
+        String encodePasswd = passwordEncoder.encode(passwd);
 
         User user = new User(name, email, encodePasswd);
         UserService userService = UserServiceImpl.getInstance();

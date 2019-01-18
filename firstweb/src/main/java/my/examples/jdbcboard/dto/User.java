@@ -58,14 +58,11 @@ public class User {
 
 /*
 CREATE TABLE `user` (
-  `user_id` bigint(20) unsigned NOT NULL,
+  `user_id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `passwd` varchar(255) NOT NULL,
   `user_regdate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`user_id`),
-  UNIQUE KEY `user_id_UNIQUE` (`user_id`),
-  UNIQUE KEY `name_UNIQUE` (`name`),
-  UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
  */

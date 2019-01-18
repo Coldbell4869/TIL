@@ -11,12 +11,24 @@
 
 <body>
 
-<h1>로그인</h1>
-<form method="post" action="/login">
-    email : <input type="text" name="email" size="20"><br>
-    password : <input type="password" name="passwd" size="20"><br>
-    <input type="submit">
-</form>
+<h1>LOGIN</h1>
+<form action="/login" method="post">
+    <div class="container" style="padding-top: 15px;">
+        <div class="content">
+            <div class="form-group">
+                <label for="email">email : </label>
+                <input type="text" class="form-control" id="email" name="email" size="20" >
+            </div>
+            <div class="form-group">
+                <label for="title">password : </label>
+                <input type="text" class="form-control" id="title" name="passwd" size="20" >
+            </div>
+            <div class="buttons" style="float:right;">
+                <button type="button" class="btn btn-outline-secondary" onClick="location.href='/list'">취소</button>
+                <button type="submit" class="btn btn-outline-secondary">로그인</button>
+            </div>
+        </div>
+    </div>
 
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>

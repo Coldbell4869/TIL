@@ -154,7 +154,7 @@ public class FreeBoardDaoImpl implements FreeBoardDao {
                 ps.setLong(1, id);
                 ps.setLong(2, id);
                 ps.executeUpdate();
-/            }
+            }
         }catch(Exception ex){
             ex.printStackTrace();
         }

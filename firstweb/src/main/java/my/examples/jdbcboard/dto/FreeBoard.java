@@ -7,6 +7,7 @@ import java.time.LocalDateTime;
 public class FreeBoard {
 
     private long id;
+    private long user_id;
     private String title;
     private String name;
     private String content;

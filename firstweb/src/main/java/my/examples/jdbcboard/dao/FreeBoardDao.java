@@ -10,6 +10,7 @@ public interface FreeBoardDao {
     public List<FreeBoard> getFreeBoards(long start, long limit);
 
     void addBoard(FreeBoard freeboard);
+
     Long getLastInsertId();
 
     void updateLastInsertId(Long id);

@@ -12,9 +12,9 @@
 <body>
 <h1>회원가입</h1>
 <form method="post" action="/join">
-    name : <input type="text" name="name" size="20"><br>
-    email : <input type="text" name="email" size="20"><br>
-    password : <input type="password" name="passwd" size="20"><br>
+    name : <input type="text" name="user_name" size="20"><br>
+    email : <input type="text" name="user_email" size="20"><br>
+    password : <input type="password" name="user_passwd" size="20"><br>
     <%--password 확인 : <input type="password" name="passwd2" size="20"><br>--%>
     <input type="submit">
 </form>

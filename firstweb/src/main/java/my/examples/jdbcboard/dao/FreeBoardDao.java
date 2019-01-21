@@ -18,6 +18,11 @@ public interface FreeBoardDao {
     void deleteBoard(Long id);
 
     void updateReadCount(long id);
+
+    void updateGroupSeqGt(int family, int sequence);
+
+    void addReBoard(FreeBoard freeboard);
+
 }
 
 

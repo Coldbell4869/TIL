@@ -1,15 +1,12 @@
 package my.examples.jdbcboard.dto;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class FreeBoard {
-
-    private long id;
-    private long user_id;
+    private Long id;
+    private Long user_id;
+    private String user_name;
     private String title;
-    private String name;
     private String content;
     private Date regdate;
     private int readcount;
@@ -18,35 +15,45 @@ public class FreeBoard {
     private int sequence;
 
     public FreeBoard() {
+        this.regdate = new Date();
+        this.readcount = 0;
     }
 
-    public FreeBoard(String name, String title, String content) {
-        this.name = name;
+    public FreeBoard(String title, String content) {
+        this();
         this.title = title;
         this.content = content;
     }
 
-//    public FreeBoard(String name, String title, String content, long id) {
-//        this(name, title, content);
-//        this.id = id;
-//    }
-
-    public FreeBoard(long id, String name, String title, String content, Date regdate, int readcount, int family, int level, int sequence) {
-        this(name,title,content);
+    public FreeBoard(Long id, String title, String content, Date regdate, int readcount) {
+        this(title, content);
         this.id = id;
         this.regdate = regdate;
         this.readcount = readcount;
-        this.family = family;
-        this.level = level;
-        this.sequence = sequence;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
+    }
+
+    public Long getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(Long user_id) {
+        this.user_id = user_id;
+    }
+
+    public String getUser_name() {
+        return user_name;
+    }
+
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
     public String getTitle() {
@@ -55,14 +62,6 @@ public class FreeBoard {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getContent() {
@@ -118,13 +117,9 @@ public class FreeBoard {
         return "FreeBoard{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
-                ", name='" + name + '\'' +
                 ", content='" + content + '\'' +
                 ", regdate=" + regdate +
                 ", readcount=" + readcount +
-                ", family=" + family +
-                ", level=" + level +
-                ", sequence=" + sequence +
                 '}';
     }
 }

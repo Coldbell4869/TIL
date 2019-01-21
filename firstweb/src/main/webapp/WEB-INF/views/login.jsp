@@ -16,16 +16,16 @@
     <div class="container" style="padding-top: 15px;">
         <div class="content">
             <div class="form-group">
-                <label for="email">email : </label>
-                <input type="text" class="form-control" id="email" name="email" size="20" >
+                <label for="user_email">email : </label>
+                <input type="text" class="form-control" id="user_email" name="user_email" size="20" >
             </div>
             <div class="form-group">
-                <label for="title">password : </label>
-                <input type="text" class="form-control" id="title" name="passwd" size="20" >
+                <label for="user_passwd">password : </label>
+                <input type="text" class="form-control" id="user_passwd" name="user_passwd" size="20" >
             </div>
             <div class="buttons" style="float:right;">
-                <button type="button" class="btn btn-outline-secondary" onClick="location.href='/list'">취소</button>
                 <button type="submit" class="btn btn-outline-secondary">로그인</button>
+                <button type="button" class="btn btn-outline-secondary" onClick="location.href='/list'">취소</button>
             </div>
         </div>
     </div>

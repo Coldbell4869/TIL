@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--bean tag 하나당 싱글턴 객체 하나씩 만들어진다. id가 같으면 안됨. -->
+    <bean id="bean1" class="soundsystem.MyBean"/>
+    <bean id="bean2" class="soundsystem.MyBean"/>
+</beans>
+

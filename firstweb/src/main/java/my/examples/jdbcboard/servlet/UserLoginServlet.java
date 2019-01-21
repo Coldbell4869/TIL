@@ -27,19 +27,19 @@ public class UserLoginServlet extends HttpServlet{
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
-        String email = req.getParameter("email");
-        String passwd = req.getParameter("passwd");
+        String user_email = req.getParameter("user_email");
+        String user_passwd = req.getParameter("user_passwd");
 
         UserService userService = UserServiceImpl.getInstance();
-        String encodePasswd = userService.getPasswdByEmail(email);
-        if(encodePasswd != null){
+        User user = userService.getUserByEmail(user_email);
+        if(user != null && user.getUser_passwd() != null){
             PasswordEncoder passwordEncoder =
                     PasswordEncoderFactories.createDelegatingPasswordEncoder();
-            boolean matches = passwordEncoder.matches(passwd, encodePasswd);
+            boolean matches = passwordEncoder.matches(user_passwd, user.getUser_passwd());
             if(matches){
                 // 로그인정보를 세션에 저장.
                 HttpSession session = req.getSession();
-                session.setAttribute("logininfo", email);
+                session.setAttribute("logininfo", user); // 회원정보를 세션에 전달한다
                 System.out.println("암호가 맞아요.");
             }else{
                 // 암호가 틀렸어요.

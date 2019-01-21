@@ -33,15 +33,19 @@ public class UserServiceImpl implements UserService{
     }
 
     @Override
-    public String getPasswdByEmail(String email) {
-        String passwd = null;
+//    public String getPasswdByEmail(String email) {
+//        String passwd = null;
+    public User getUserByEmail(String user_email){
+        User user = null;
         UserDao userDao = UserDaoImpl.getInstance();
         try(Connection conn = DBUtil.getInstance().getConnection();) {
             ConnectionContextHolder.setConnection(conn);
-            passwd = userDao.getPasswdByEmail(email);
+//            passwd = userDao.getPasswdByEmail(email);
+            user = userDao.getUserByEmail(user_email);
         }catch(Exception ex){
             ex.printStackTrace();
         }
-        return passwd;
+//        return passwd;
+        return user;
     }
 }

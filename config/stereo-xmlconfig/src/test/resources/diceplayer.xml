@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:c="http://www.springframework.org/schema/c"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+    의존성 주입:
+    주사위 를 player에 ref로 주고, game에 세명의 player를 ref로 주는 것. 이것이 바로 의존성 주입이다.
+    -->
+
+    <bean id="game" class="soundsystem.Game">
+        <property name="playerList">
+            <list>
+                <ref bean="kim"/>
+                <ref bean="choi"/>
+                <ref bean="kang"/>
+            </list>
+        </property>
+    </bean>
+
+    <!--
+    Player kim = new Player();
+    kim.setDice(dice);
+    kim.setName("김성박");
+    -->
+    <bean id="kim" class="soundsystem.Player">
+        <property name="dice" ref="dice"/>
+        <property name="name" value="김성박"/>
+    </bean>
+
+    <bean id="choi" class="soundsystem.Player">
+        <property name="dice" ref="dice"/>
+        <property name="name" value="최준영"/>
+    </bean>
+
+    <bean id="kang" class="soundsystem.Player">
+        <property name="dice" ref="dice"/>
+        <property name="name" value="강사무엘"/>
+    </bean>
+
+
+
+    <!--
+    Dice dice = new Dice(6);
+    로 객체 생성한것과 같음.
+    -->
+    <bean id="dice" class="soundsystem.Dice">
+        <constructor-arg value="6"/>
+    </bean>
+
+    <!-- xml파일을 먼저 읽어들인다음에 bean태그들중에서 먼저 실행할 수 있는건 먼저 실행함.-->
+</beans>
+

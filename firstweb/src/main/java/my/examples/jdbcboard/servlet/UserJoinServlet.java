@@ -30,14 +30,14 @@ public class UserJoinServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
-        String name = req.getParameter("name");
-        String email = req.getParameter("email");
-        String passwd = req.getParameter("passwd");
+        String user_name = req.getParameter("user_name");
+        String user_email = req.getParameter("user_email");
+        String user_passwd = req.getParameter("user_passwd");
 //        String passwd2 = req.getParameter("passwd2");
 
 
         // 실제 값을 검사
-        if(name != null && name.length() < 2){
+        if(user_name != null && user_name.length() < 2){
             resp.sendRedirect("/join?error=babo");
             return;
         }
@@ -47,9 +47,9 @@ public class UserJoinServlet extends HttpServlet {
                 PasswordEncoderFactories.createDelegatingPasswordEncoder();
 
         // 암호화 하는 코드
-        String encodePasswd = passwordEncoder.encode(passwd);
+        String encodePasswd = passwordEncoder.encode(user_passwd);
 
-        User user = new User(name, email, encodePasswd);
+        User user = new User(user_name, user_email, encodePasswd);
         UserService userService = UserServiceImpl.getInstance();
         userService.addUser(user);
 

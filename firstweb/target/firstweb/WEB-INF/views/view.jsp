@@ -11,7 +11,7 @@
 <div class="container">
     <div class="card border-primary mb-3">
         <div class="card-header">작성일 : ${freeboard.regdate}</div>
-        <div class="card-header">작성자 : ${freeboard.name}</div>
+        <div class="card-header">작성자 : ${freeboard.user_name}</div>
         <div class="card-body">
             <h4 class="card-title">${freeboard.title}</h4>
             <p class="card-text">${freeboard.content}</p>

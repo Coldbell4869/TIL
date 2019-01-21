@@ -26,7 +26,7 @@
             <tr>
                 <td scope="row" class = board><a href="/view?id=${freeboards.id}">${freeboards.id}</a></td>
                 <td><a href="/view?id=${freeboards.id}">${freeboards.title}</a></td>
-                <td><a href="/view?id=${freeboards.id}">${freeboards.name}</a></td>
+                <td><a href="/view?id=${freeboards.id}">${freeboards.user_name}</a></td>
                 <td><a href="/view?id=${freeboards.id}">${freeboards.regdate}</a></td>
                 <td><a href="/view?id=${freeboards.id}">${freeboards.readcount}</a></td>
             </tr>

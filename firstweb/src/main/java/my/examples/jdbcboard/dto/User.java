@@ -4,19 +4,19 @@ import java.util.Date;
 
 public class User {
     private Long user_id;
-    private String name;
-    private String email;
-    private String passwd;
+    private String user_name;
+    private String user_email;
+    private String user_passwd;
     private Date user_regdate;
 
     public User(){
 
     }
 
-    public User(String name, String email, String passwd) {
-        this.name = name;
-        this.email = email;
-        this.passwd = passwd;
+    public User(String user_name, String user_email, String user_passwd) {
+        this.user_name = user_name;
+        this.user_email = user_email;
+        this.user_passwd = user_passwd;
     }
 
     public Long getUser_id() {
@@ -27,28 +27,28 @@ public class User {
         this.user_id = user_id;
     }
 
-    public String getName() {
-        return name;
+    public String getUser_name() {
+        return user_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser_name(String user_name) {
+        this.user_name = user_name;
     }
 
-    public String getEmail() {
-        return email;
+    public String getUser_email() {
+        return user_email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setUser_email(String user_email) {
+        this.user_email = user_email;
     }
 
-    public String getPasswd() {
-        return passwd;
+    public String getUser_passwd() {
+        return user_passwd;
     }
 
-    public void setPasswd(String passwd) {
-        this.passwd = passwd;
+    public void setUser_passwd(String user_passwd) {
+        this.user_passwd = user_passwd;
     }
 
     public Date getUser_regdate() {

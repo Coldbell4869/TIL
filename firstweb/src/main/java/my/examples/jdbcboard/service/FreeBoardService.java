@@ -16,8 +16,9 @@ public interface FreeBoardService {
     public List<FreeBoard> getFreeBoards(int page);
     public FreeBoard getFreeBoard(Long id);
     public void deleteFreeBoard(Long id);
-    public void addFreeBoard(FreeBoard freeBoard);
-//    public void updateReadCount(long id);
-//    public void updateBoard(String name, String title, String content, long id);
+
+    void addFreeBoard(FreeBoard freeboard);
+
+    void addReFreeBoard(FreeBoard freeboard);
 
 }

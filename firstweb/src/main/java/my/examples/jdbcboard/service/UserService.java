@@ -5,5 +5,6 @@ import my.examples.jdbcboard.dto.User;
 public interface UserService {
     void addUser(User user);
 
-    String getPasswdByEmail(String email);
+//    String getPasswdByEmail(String email);
+    User getUserByEmail(String user_email);
 }

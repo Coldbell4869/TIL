@@ -8,5 +8,5 @@ public interface UserDao {
 
 //    String getPasswdByEmail(String email);
 
-    User getUserByEmail(String email);
+    User getUserByEmail(String user_email);
 }

@@ -3,6 +3,7 @@ package my.examples.jdbcboard.servlet;
 import my.examples.jdbcboard.dao.FreeBoardDao;
 import my.examples.jdbcboard.dao.FreeBoardDaoImpl;
 import my.examples.jdbcboard.dto.FreeBoard;
+import my.examples.jdbcboard.dto.User;
 import my.examples.jdbcboard.service.FreeBoardService;
 import my.examples.jdbcboard.service.FreeBoardServiceImpl;
 
@@ -19,16 +20,6 @@ import java.io.IOException;
 public class WriteServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        String email = (String)session.getAttribute("logininfo");
-        if(email == null){
-            System.out.println("로그인 필요");
-            resp.sendRedirect("/login");
-            return;
-        }else{
-            System.out.println("로그인 OK");
-        }
-
         RequestDispatcher requestDispatcher =
                 req.getRequestDispatcher("/WEB-INF/views/write.jsp");
         requestDispatcher.forward(req, resp);
@@ -36,14 +27,17 @@ public class WriteServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setCharacterEncoding("UTF-8");
-        String name = req.getParameter("name");
         String title = req.getParameter("title");
         String content = req.getParameter("content");
 
-        FreeBoardService freeBoardService = new FreeBoardServiceImpl();
-        FreeBoard freeboard = new FreeBoard(name, title, content);
+        User user = (User) req.getSession().getAttribute("logininfo");
 
+        FreeBoardService freeBoardService = new FreeBoardServiceImpl();
+        FreeBoard freeboard = new FreeBoard();
+        freeboard.setUser_id(user.getUser_id());    //        board.setUserId(user.getId());
+        freeboard.setUser_name(user.getUser_name());
+        freeboard.setTitle(title);
+        freeboard.setContent(content);
         freeBoardService.addFreeBoard(freeboard);
 
         resp.sendRedirect("/list");

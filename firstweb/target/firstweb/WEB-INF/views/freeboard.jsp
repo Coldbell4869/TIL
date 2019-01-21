@@ -66,7 +66,15 @@
     </div>
     <div class="col-sm">
         <div class="col text-right">
-            <button type="button" class="btn btn-outline-secondary" id = "btn-write" onClick="location.href='/write'">글쓰기</button>
+            <%--<button type="button" class="btn btn-outline-secondary" id = "btn-write" onClick="location.href='/write'">글쓰기</button>--%>
+            <c:if test="${sessionScope.logininfo == null}">
+                <button type="button" class="btn btn-outline-secondary" id = "btn-login" onClick="location.href='/login'">로그인</button>
+            </c:if>
+            <c:if test="${sessionScope.logininfo == null}">
+                ${sessionScope.logininfo.name}&nbsp;
+                <button type="button" class="btn btn-outline-secondary" id = "btn-write" onClick="location.href='/write'">글쓰기</button>
+                <button type="button" class="btn btn-outline-secondary" id = "btn-logout" onClick="location.href='/logout'">로그아웃</button>
+            </c:if>
         </div>
     </div>
 

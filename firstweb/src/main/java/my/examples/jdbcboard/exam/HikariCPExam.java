@@ -40,7 +40,7 @@ public class HikariCPExam {
             if (conn != null)
                 System.out.println("connection is ok");
 
-            String sql = "SELECT id, title, uname, content, regdate, readcount, family, level, sequence FROM freepost LEFT JOIN freeuser ON freeuser.uname = freepost.name ORDER BY id DESC LIMIT ?, ?";
+            String sql = "SELECT id, user_id, user_name, title, regdate, readcount, family, level, sequence FROM freepost LEFT JOIN user ON user.user_name = freepost.user_name ORDER BY id DESC LIMIT ?, ?";
             ps = conn.prepareStatement(sql);
             // c. 바인딩 - PreparedStatement
             ps.setLong(1, start); // 첫번째 물음표에 5를 바인딩한다.
@@ -54,15 +54,14 @@ public class HikariCPExam {
             while(rs.next()){
                 long id = rs.getLong(1);
                 String title = rs.getString(2);
-                String name = rs.getString(3);
-                String content = rs.getString(4);
-                Date regdate = rs.getDate(5);
-                int readcount = rs.getInt(6);
-                int family = rs.getInt(7);
-                int level = rs.getInt(8);
-                int sequence = rs.getInt(9);
-
-                FreeBoard freeBoard = new FreeBoard(id, title, name, content, regdate, readcount, family, level, sequence);
+                String content = rs.getString(3);
+                Date regdate = rs.getDate(4);
+                int readcount = rs.getInt(5);
+//                int family = rs.getInt(7);
+//                int level = rs.getInt(8);
+//                int sequence = rs.getInt(9);
+//                Long id, String user_name, String title, String content, Date regdate, int readcount
+                FreeBoard freeBoard = new FreeBoard(id, title, content, regdate, readcount);
                 System.out.println(freeBoard);
             }
         }catch(Exception ex){

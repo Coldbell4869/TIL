@@ -20,7 +20,7 @@ public class FreeBoardServiceImpl implements FreeBoardService{
         int limit = SIZE;
 
         List<FreeBoard> freeBoards = new ArrayList<>();
-        try(Connection conn = DBUtil.getInstance().getConnection();){
+        try(Connection conn = DBUtil.getInstance().getConnection();) {
             ConnectionContextHolder.setConnection(conn);
             freeBoards = freeBoardDao.getFreeBoards(start, limit);
         }catch(Exception ex){
@@ -73,7 +73,12 @@ public class FreeBoardServiceImpl implements FreeBoardService{
         try {
             conn = DBUtil.getInstance().getConnection();
             ConnectionContextHolder.setConnection(conn);
+
             freeBoardDao.addBoard(freeBoard);
+
+            Long lastInsertId = freeBoardDao.getLastInsertId();
+            freeBoardDao.updateLastInsertId(lastInsertId);
+
             conn.commit();
         } catch (Exception ex) {
             DBUtil.rollback(conn);
@@ -82,4 +87,29 @@ public class FreeBoardServiceImpl implements FreeBoardService{
             DBUtil.close(conn);
         }
     }
+
+    @Override
+    public void addReFreeBoard(FreeBoard freeboard) {
+        Connection conn = null;
+        FreeBoardDao boardDao = new FreeBoardDaoImpl();
+        try {
+            conn = DBUtil.getInstance().getConnection();
+            ConnectionContextHolder.setConnection(conn);
+
+            FreeBoard oBoard = boardDao.getFreeBoard(freeboard.getId());
+            freeboard.setSequence(oBoard.getSequence());
+            freeboard.setFamily(oBoard.getFamily());
+            freeboard.setLevel(oBoard.getLevel());
+            boardDao.updateGroupSeqGt(oBoard.getFamily(), oBoard.getSequence());
+            boardDao.addReBoard(freeboard);
+
+            conn.commit(); // 트랜젝션 commit
+        }catch(Exception ex){
+            DBUtil.rollback(conn);
+            ex.printStackTrace();
+        }finally {
+            DBUtil.close(conn);
+        }
+    }
+
 }

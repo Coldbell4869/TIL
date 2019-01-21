@@ -30,11 +30,11 @@ public class ViewServlet extends HttpServlet {
 
         FreeBoardService freeBoardService = new FreeBoardServiceImpl();
         FreeBoard freeBoard = freeBoardService.getFreeBoard(id);
-
-//        freeBoardDao.updateReadCount(id);
-
+        freeBoard.setContent(freeBoard.getContent().replaceAll("\n", "<br>\n"));
         req.setAttribute("freeboard", freeBoard);
-        RequestDispatcher requestDistpatcher = req.getRequestDispatcher("/WEB-INF/views/view.jsp");
+
+        RequestDispatcher requestDistpatcher =
+                req.getRequestDispatcher("/WEB-INF/views/view.jsp");
         requestDistpatcher.forward(req, resp);
     }
 }

@@ -25,8 +25,8 @@
                 <textarea class="form-control" rows="5" id="content" name="content" value="${freeboard.content}">${freeboard.content}</textarea>
             </div>
             <div class="buttons" style="float:right;">
-                <button type="button" class="btn btn-outline-secondary" onClick="location.href='/list'">취소</button>
-                <button type="submit" class="btn btn-outline-secondary" onClick="location.href='/modify'">수정</button>
+                <button type="button" class="btn btn-outline-secondary" onClick="location.href='/view'">취소</button>
+                <button type="submit" class="btn btn-outline-secondary">수정</button>
             </div>
         </div>
     </div>

@@ -13,8 +13,9 @@
 <div class="container" style="padding-top: 15px;">
     <div class="content">
         <div class="form-group">
-            <label for="name">작성자</label>
-            <input type="text" class="form-control" id="name" name="name" placeholder="작성자 이름을 입력하세요. ">
+            <label>작성자 : </label>
+            <%--<input type="text" class="form-control" id="name" name="name" placeholder="작성자 이름을 입력하세요. ">--%>
+                <label>${sessionScope.logininfo.user_name}</label>
         </div>
         <div class="form-group">
             <label for="title">제목</label>

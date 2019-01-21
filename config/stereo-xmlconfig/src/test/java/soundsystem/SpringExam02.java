@@ -12,15 +12,18 @@ public class SpringExam02 {
         System.out.println(bean1.getName());
         System.out.println(bean1.getCount());
         MyBean bean2 = context.getBean("bean1", MyBean.class);
+        System.out.println(bean2.getName());
+        System.out.println(bean2.getCount());
         if(bean1 == bean2){ // 같은 참조냐?
-            System.out.println("bean1 == bean2");
+            System.out.println("bean1 == bean2");   // xml의 id가 bean1 로 같아서 같은 참조임.
         }else{
             System.out.println("bean1 != bean");
-        }
-        MyBean bean3 = context.getBean("bean2", MyBean.class);
+    }
+        MyBean bean3 = context.getBean("bean2", MyBean.class);  // 매개변수를 2개 받는 생성자로 생성한 인스턴스.
         System.out.println(bean3.getName() + ", " + bean3.getCount());
 
         MyBean bean4 = context.getBean("bean3", MyBean.class);
         System.out.println(bean4.getValue("a1"));
+        System.out.println(bean4.getValue("c1"));
     }
 }

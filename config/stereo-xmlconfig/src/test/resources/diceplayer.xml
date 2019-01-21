@@ -7,6 +7,7 @@
     <!--
     의존성 주입:
     주사위 를 player에 ref로 주고, game에 세명의 player를 ref로 주는 것. 이것이 바로 의존성 주입이다.
+    alt + shift + cmd + U 로 인텔리제이 스프링 의존성 다이어그램 확인 가능.
     -->
 
     <bean id="game" class="soundsystem.Game">

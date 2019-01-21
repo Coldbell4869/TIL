@@ -7,96 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4759574-14db-4f0c-a245-062a9863e42f" name="Default Changelist" comment="JDBC 프로그래밍">
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/filter/RequestEncodingFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/RewriteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/rewrite.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/JobRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/JobRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/diceplayer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/diceplayer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDaoSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/FreeBoardDaoSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDaoSQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/UserDaoSQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dto/FreeBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dto/FreeBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dto/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/exam/HikariCPExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/exam/HikariCPExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/filter/SecurityFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/filter/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/ListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/ListServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/ModifyServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UpdateServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserJoinServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserJoinServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserLoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserLoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/ViewServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/ViewServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/WriteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/WriteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/util/DBUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/util/DBUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/freeboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/write.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDaoSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/FreeBoardDaoSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDaoSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dao/UserDaoSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dto/FreeBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dto/FreeBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/exam/HikariCPExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/exam/HikariCPExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/exam/TransactionExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/exam/TransactionExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/filter/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/filter/SecurityFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/FreeBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/FreeBoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/FreeBoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/FreeBoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/ListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/ListServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/ModifyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/UpdateServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/UserJoinServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/UserJoinServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/UserLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/UserLoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/ViewServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/ViewServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/WriteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/servlet/WriteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/my/examples/jdbcboard/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDaoSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/FreeBoardDaoSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDaoSQL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dao/UserDaoSQL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dto/FreeBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dto/FreeBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/dto/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/exam/HikariCPExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/exam/HikariCPExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/exam/TransactionExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/exam/TransactionExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/filter/SecurityFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/filter/SecurityFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/FreeBoardService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/FreeBoardService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/FreeBoardServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/FreeBoardServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/service/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/ListServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/ListServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/ModifyServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/UpdateServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/UserJoinServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/UserJoinServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/UserLoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/UserLoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/ViewServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/ViewServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/WriteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/servlet/WriteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/util/DBUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/classes/my/examples/jdbcboard/util/DBUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/freeboard.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/freeboard.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/join.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/join.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/modify.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/modify.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/view.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/view.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/write.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/firstweb/WEB-INF/views/write.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -140,8 +58,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modify.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="134">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -330,9 +248,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
-    <option name="width" value="1440" />
+    <option name="width" value="960" />
     <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -752,7 +670,7 @@
       <workItem from="1547773855821" duration="9563000" />
       <workItem from="1547988783209" duration="11413000" />
       <workItem from="1548001420643" duration="9484000" />
-      <workItem from="1548072992766" duration="443000" />
+      <workItem from="1548072992766" duration="2032000" />
     </task>
     <task id="LOCAL-00001" summary="servlet jsp">
       <created>1547016731738</created>
@@ -772,12 +690,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163123000" />
+    <option name="totallyTimeSpent" value="164712000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="0" y="23" width="960" height="877" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.30829757" />
+      <window_info content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.4694989" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.24964234" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -788,7 +706,7 @@
       <window_info id="Web" order="8" side_tool="true" weight="0.3297568" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32665965" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5877763" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5877763" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39831403" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1286,8 +1204,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/modify.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        <state relative-caret-position="134">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>

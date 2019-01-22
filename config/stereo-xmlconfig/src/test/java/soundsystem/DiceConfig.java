@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.ArrayList;
 import java.util.List;
 
-// Spring은 @Configuration 붙어있는 클래스를 Java Config로 인식한다.
+// Spring은 @Configuration 붙어있는 클래스를 Java Config로 인식한다. @Bean을 자동으로 실행한다.
 @Configuration
 public class DiceConfig {
     /*
@@ -17,7 +17,7 @@ public class DiceConfig {
     </bean>
      */
     @Bean
-    public Dice dice(){
+    public Dice dice(){ //리턴해주는 Dice 객체가 싱글턴이 된다(컨테이너가 관리해주는 객체가 된다), dice() 메소드 이름이 id가 됨. 프록시?
         System.out.println("dice() --------------------------");
         return new Dice(6);
     }
@@ -26,40 +26,41 @@ public class DiceConfig {
     스프링 컨테이너가 kim이란 메소드를 호출하는데 파라미터로 Dice객체를 자동으로 넣어준다.
      */
     @Bean
-    public Player kim(){
+    public Player kim(Dice dice){
         System.out.println("kim()");
         System.out.println(this.getClass().getName());
         Player player = new Player();
-        player.setDice(dice());
+        player.setDice(dice);
         player.setName("kim");
         return player;
     }
 
     @Bean
-    public Player kang(){
+    public Player kang(Dice dice){
         System.out.println("kang()");
         Player player = new Player();
-        player.setDice(dice());
+        player.setDice(dice);
         player.setName("kang");
         return player;
     }
 
     @Bean
-    public Player lee(){
+    public Player lee(Dice dice){
         System.out.println("lee()");
         Player player = new Player();
-        player.setDice(dice());
+        player.setDice(dice);
         player.setName("lee");
         return player;
     }
 
     @Bean
-    public Game game(){
+    public Game game(Player kim, Player kang, Player lee){  // Configuration에서는 변수명이 중요한 의미를 갖는다.
+        System.out.println("Game");
         Game game = new Game();
         List<Player> list = new ArrayList<>();
-        list.add(kim());
-        list.add(kang());
-        list.add(lee());
+        list.add(kim);
+        list.add(kang);
+        list.add(lee);
         game.setPlayerList(list);
         return game;
     }

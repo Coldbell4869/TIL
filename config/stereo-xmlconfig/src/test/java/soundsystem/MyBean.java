@@ -3,7 +3,6 @@ package soundsystem;
 import java.util.Map;
 
 public class MyBean {
-
     private String name;
     private int count;
     private Map<String, String> map;

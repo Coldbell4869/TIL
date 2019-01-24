@@ -4,8 +4,6 @@
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- id값을 받아서 객체를 찾아서 실행하는 시나리오 -->
-
     <bean id="job1" class="soundsystem.Job1"/>
     <bean id="job2" class="soundsystem.Job2"/>
     <bean id="job3" class="soundsystem.Job3"/>

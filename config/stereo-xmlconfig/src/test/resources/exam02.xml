@@ -24,7 +24,7 @@
 
     <bean id="bean3" class="soundsystem.MyBean">
         <constructor-arg>
-            <map>   <!-- map객체를 생성한다, 키값으로 아래 value를 넣어서. -->
+            <map>
                 <entry key="a1" value="Kang"/>
                 <entry key="a2" value="Kim"/>
                 <entry key="b1" value="Choi"/>

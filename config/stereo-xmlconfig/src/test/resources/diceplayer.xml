@@ -4,12 +4,6 @@
   xmlns:c="http://www.springframework.org/schema/c"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--
-    의존성 주입:
-    주사위 를 player에 ref로 주고, game에 세명의 player를 ref로 주는 것. 이것이 바로 의존성 주입이다.
-    alt + shift + cmd + U 로 인텔리제이 스프링 의존성 다이어그램 확인 가능.
-    -->
-
     <bean id="game" class="soundsystem.Game">
         <property name="playerList">
             <list>
@@ -43,13 +37,11 @@
 
 
     <!--
-    Dice dice = new Dice(6);
-    로 객체 생성한것과 같음.
-    -->
+Dice dice1 = 싱글턴으로 6을 가지는 Dice객체
+Dice dice2 = 싱글턴으로 6을 가지는 Dice객체
+-->
     <bean id="dice" class="soundsystem.Dice">
         <constructor-arg value="6"/>
     </bean>
-
-    <!-- xml파일을 먼저 읽어들인다음에 bean태그들중에서 먼저 실행할 수 있는건 먼저 실행함.-->
 </beans>
 

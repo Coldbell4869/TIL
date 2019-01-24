@@ -10,12 +10,12 @@ public class Game {
     }
 
     public void setPlayerList(List<Player> list){
-        System.out.println("Game.setPlayerList()");
+        System.out.println("Game.setPalyerList()");
         this.list = list;
     }
 
     public void play(){
-        System.out.println("Game Play!!!");
+        System.out.println("Game.play()");
         for(Player player : list){
             player.play();
         }

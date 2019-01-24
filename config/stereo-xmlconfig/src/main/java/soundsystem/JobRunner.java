@@ -15,7 +15,7 @@ public class JobRunner implements BeanFactoryAware{
         this.beanFactory = beanFactory;
     }
 
-    // "job1", "job2", "job3" 문자열을 리스트에 담는다.
+    // "job1", "job2", "job3"
     public void setList(List<String> list) {
         this.list = list;
     }

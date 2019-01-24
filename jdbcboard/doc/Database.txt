@@ -1,0 +1,48 @@
+CREATE TABLE user(
+ id BIGINT AUTO_INCREMENT,
+ name VARCHAR(255) NOT NULL,
+ nickname  VARCHAR(255) NOT NULL UNIQUE,
+ email VARCHAR(255) NOT NULL UNIQUE,
+ passwd VARCHAR(255) NOT NULL,
+ regdate DATETIME NOT NULL DEFAULT     CURRENT_TIMESTAMP,
+PRIMARY KEY(id)
+);
+
+CREATE TABLE board(
+ id BIGINT AUTO_INCREMENT,
+ title VARCHAR(255) NOT NULL,
+ user_id BIGINT NOT NULL,
+ nickname VARCHAR(255) NOT NULL,
+ content LONGTEXT NOT NULL,
+ regdate DATETIME NOT NULL DEFAULT     CURRENT_TIMESTAMP,
+ read_count INT NOT NULL DEFAULT 0,
+ group_no INT NOT NULL,
+ group_seq   INT NOT NULL,
+ group_depth  INT NOT NULL,
+FOREIGN KEY (user_id)
+REFERENCES user(id) ON UPDATE CASCADE,
+PRIMARY KEY(id)
+);
+
+insert into user (id, name, nickname, email, passwd)
+values(1, 'kimsp', 'urstory','urstory@gmail.com', '');
+
+// 값 저장
+insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth)
+values( 'title1', 1, 'kim', 'content1',  0 , 0, 0 );
+select LAST_INSERT_ID();
+update board set group_no = ? where id = ?
+
+// 답글 저장
+insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth)
+values( 'title1', 1, 'kim', 'content1', 기존의게시물의group_no , 1, 1 );
+
+
+id   group_no    group_seq   group_depth
+
+2      2           0              0
+3      2           1              1
+5      2           2              2  //(2) 기존값을 이용하여 저장
+4      2           3              2  //(1) update group seq + 1 where gorup_no 기존글의groupno, 기존글의 groupseq큰것들
+
+1      1           0              0

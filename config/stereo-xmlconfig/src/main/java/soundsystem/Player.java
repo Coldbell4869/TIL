@@ -23,6 +23,6 @@ public class Player {
     }
 
     public void play(){
-        System.out.println( name + "은 주사위를 던져 " + dice.getNumber() + " 가 나왔습니다.");
+        System.out.println(name + "은 주사위를 던져 " + dice.getNumber() + " 가 나왔습니다.");
     }
 }

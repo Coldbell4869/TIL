@@ -10,7 +10,7 @@ public interface FreeBoardService {
     // 글을 읽어온다. (글 읽기 + 조회수 증가)
     // 글을 삭제한다.
     // 글을 쓴다.
-    // 글 내용을 불러와서 수정한다
+    // 글 내용을 불러와서 수정한다d
     // 수정한 내용으로 기존 내용을 갈아치운다.
 
     public List<FreeBoard> getFreeBoards(int page);

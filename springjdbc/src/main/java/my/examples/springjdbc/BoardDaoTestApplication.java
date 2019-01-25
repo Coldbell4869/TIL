@@ -19,5 +19,13 @@ public class BoardDaoTestApplication {
         Board board =
                 boardDao.getBoard(2L);
         System.out.println(board);
+
+        int count = boardDao.getBoardCount();
+        System.out.println(count);
+
+
+
+        //            "insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth) " +
+        //                    "values( :title, :userId, :nickname, :content ,  0 , 0, 0 )";
     }
 }

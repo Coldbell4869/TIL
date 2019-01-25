@@ -7,43 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4759574-14db-4f0c-a245-062a9863e42f" name="Default Changelist" comment="JDBC 프로그래밍">
-      <change afterPath="$PROJECT_DIR$/../reflection/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../reflection/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/JobRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/JobRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/book/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/main/java/soundsystem/book/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/BookConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/BookConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/DiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/DiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/MyBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/MyBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam02.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam05.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam05.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam08.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam08.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam09.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/SpringExam09.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/StudentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/java/soundsystem/StudentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/datasource.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/datasource.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/diceplayer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/diceplayer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/exam01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/exam01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/exam02.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/exam02.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/job.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../config/stereo-xmlconfig/src/test/resources/job.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/firstweb.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/artifacts/tomcat8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/src/main/java/my/examples/jdbcboard/exam/SelectListExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/src/main/java/my/examples/jdbcboard/exam/SelectListExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/src/main/java/my/examples/jdbcboard/exam/SelectOneExam.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/src/main/java/my/examples/jdbcboard/exam/SelectOneExam.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/target/classes/my/examples/jdbcboard/exam/SelectListExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/target/classes/my/examples/jdbcboard/exam/SelectListExam.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/target/classes/my/examples/jdbcboard/exam/SelectOneExam.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/target/classes/my/examples/jdbcboard/exam/SelectOneExam.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -75,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+            <state relative-caret-position="274">
+              <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,6 +174,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -635,7 +601,7 @@
       <workItem from="1548089070316" duration="10575000" />
       <workItem from="1548298595083" duration="2174000" />
       <workItem from="1548311727140" duration="1694000" />
-      <workItem from="1548320601725" duration="448000" />
+      <workItem from="1548320601725" duration="600000" />
     </task>
     <task id="LOCAL-00001" summary="servlet jsp">
       <created>1547016731738</created>
@@ -655,10 +621,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179603000" />
+    <option name="totallyTimeSpent" value="179755000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <frame x="-1" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" side_tool="true" visible="true" weight="0.32403433" />
@@ -1153,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/FreeBoardServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
+        <state relative-caret-position="274">
+          <caret line="47" column="9" lean-forward="true" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

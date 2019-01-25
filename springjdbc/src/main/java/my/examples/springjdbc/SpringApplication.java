@@ -1,8 +1,10 @@
 package my.examples.springjdbc;
 
 import my.examples.springjdbc.config.ApplicationConfig;
+import my.examples.springjdbc.dao.BoardDao;
 import my.examples.springjdbc.dao.UserDao;
 import my.examples.springjdbc.dao.UserDaoImpl;
+import my.examples.springjdbc.dto.Board;
 import my.examples.springjdbc.dto.User;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -15,6 +17,7 @@ public class SpringApplication {
                 new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
         UserDao userDao = applicationContext.getBean(UserDao.class);
+        BoardDao boardDao = applicationContext.getBean(BoardDao.class);
 //        List<User> users = userDao.selectAll();
 //        for(User user : users){
 //            System.out.println(user);
@@ -30,6 +33,5 @@ public class SpringApplication {
 //        long id = userDao.addUser(user);
 //        System.out.println(id);
 
-        userDao.updateUser(8L, "고길동", "둘리아빠");
     }
 }

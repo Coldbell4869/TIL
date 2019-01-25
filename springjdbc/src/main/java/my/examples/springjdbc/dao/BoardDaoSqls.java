@@ -18,5 +18,6 @@ public class BoardDaoSqls {
             "delete from board where id = :id";
     public static final String UPDATE_GROUP_SEQ_GT =
             "update board set group_seq = group_seq + 1 where group_no = :groupNo and group_seq > :groupSeq";
-
+    public static final String TOTAL_BOARD_POSTS =
+            "select count(*) from board";
 }

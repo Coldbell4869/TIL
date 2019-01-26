@@ -9,7 +9,7 @@ public interface BoardDao {
 
     public List<Board> getBoards(int start, int limit);
 
-    int addBoard(Board board);
+    long addBoard(Board board);
 
     Long getLastInsertId();
 

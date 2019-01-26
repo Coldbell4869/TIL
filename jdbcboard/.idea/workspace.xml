@@ -7,23 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2534a1-48f7-45de-84df-e917be86e647" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/service/BoardService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/service/BoardServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../firstweb/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../firstweb/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/BoardDaoTestApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/BoardDaoTestApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/SpringApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/SpringApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDaoSqls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/BoardDaoSqls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/BoardDaoTestApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/BoardDaoTestApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/SpringApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/SpringApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/BoardDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/BoardDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/BoardDaoSqls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/BoardDaoSqls.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +20,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -58,20 +44,44 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/BoardDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="128" column="21" lean-forward="true" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
+            <state relative-caret-position="23">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Singleton" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>doFilter</find>
       <find>servlet</find>
       <find>rs</find>
+      <find>boa</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -84,6 +94,7 @@
         <option value="$PROJECT_DIR$/src/main/resources/datasource.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/BoardService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/BoardDaoImpl.java" />
       </list>
     </option>
   </component>
@@ -251,7 +262,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548387692582" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548403107764" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.applicationServers" />
@@ -354,12 +365,12 @@
       <updated>1548305941862</updated>
       <workItem from="1548305943138" duration="14000" />
       <workItem from="1548311405369" duration="3953000" />
-      <workItem from="1548336405333" duration="7763000" />
+      <workItem from="1548336405333" duration="8527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11730000" />
+    <option name="totallyTimeSpent" value="12494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
@@ -600,20 +611,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/BoardDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="128" column="21" lean-forward="true" selection-start-line="128" selection-start-column="21" selection-end-line="128" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/BoardServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -628,6 +625,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/BoardDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>

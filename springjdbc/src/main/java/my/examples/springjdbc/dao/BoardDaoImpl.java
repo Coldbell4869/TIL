@@ -41,11 +41,14 @@ public class BoardDaoImpl implements BoardDao{
 
     @Override
     public List<Board> getBoards(int start, int limit) {
-        return null;
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("start", start);
+        paramMap.put("limit", limit);
+        return jdbc.query(SELECT_BY_PAGING, paramMap,rowMapper);
     }
 
     @Override
-    public int addBoard(Board board) {
+    public long addBoard(Board board) {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("title", board.getTitle());
         paramMap.put("user_id", board.getUserId());
@@ -55,7 +58,7 @@ public class BoardDaoImpl implements BoardDao{
         paramMap.put("group_seq", board.getGroupSeq());
         paramMap.put("group_depth", board.getGroupDepth());
         Number number = simpleJdbcInsert.executeAndReturnKey(paramMap);
-        return number.intValue();    }
+        return number.longValue();    }
     //            "insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth) " +
     //                    "values( :title, :userId, :nickname, :content ,  0 , 0, 0 )";
 

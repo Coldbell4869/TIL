@@ -36,6 +36,19 @@ public class Board {
         this.readCount = readCount;
     }
 
+    public Board(String title, Long userId, String nickname, String content, int groupNo, int groupSeq, int groupDepth) {
+        this.title = title;
+        this.userId = userId;
+        this.nickname = nickname;
+        this.content = content;
+        this.groupNo = groupNo;
+        this.groupSeq = groupSeq;
+        this.groupDepth = groupDepth;
+    }
+//                "insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth) " +
+//                        "values( :title, :userId, :nickname, :content ,  0 , 0, 0 )";
+
+
     public int getGroupNo() {
         return groupNo;
     }

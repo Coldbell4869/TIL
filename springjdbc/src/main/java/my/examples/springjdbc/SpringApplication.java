@@ -18,13 +18,27 @@ public class SpringApplication {
 
         UserDao userDao = applicationContext.getBean(UserDao.class);
         BoardDao boardDao = applicationContext.getBean(BoardDao.class);
-//        List<User> users = userDao.selectAll();
-//        for(User user : users){
-//            System.out.println(user);
-//        }
-//        User user = userDao.selectUserByEmail("urstory2@gmail.com");
-//        System.out.println(user);
 
+        List<User> users = userDao.selectAll();
+        for(User user : users){
+            System.out.println(user);
+        }
+        User user = userDao.selectUserByEmail("urstory2@gmail.com");
+        System.out.println(user);
+
+//        Board board = new Board("제목",9, "닉네임", "내용", 0, 0, 0);
+
+//        Board board = new Board();
+//        board.setTitle("제목");
+//        board.setUserId(9L);
+//        board.setNickname("닉네임");
+//        board.setContent("내용");
+//        board.setGroupNo(0);
+//        board.setGroupSeq(0);
+//        board.setGroupDepth(0);
+//        long id = boardDao.addBoard(board);
+//        System.out.println(id);
+        ////////////////////////////////////////////////////////////////
 //        User user = new User();
 //        user.setName("홍길동");
 //        user.setEmail("hong@hong.com");

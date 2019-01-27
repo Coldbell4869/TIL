@@ -41,7 +41,7 @@
             <textarea class="form-control" rows="12" id="content" name="content"></textarea>
         </div>
         <div class="buttons" style="float: right;">
-            <button type="button" class="btn btn-default" onClick="location.href='/board'">취소</button>
+            <button type="button" class="btn btn-default" onClick="location.href='/list'">취소</button>
             <input type="submit" class="btn btn-default" value="등록"/>
         </div>
     </div>

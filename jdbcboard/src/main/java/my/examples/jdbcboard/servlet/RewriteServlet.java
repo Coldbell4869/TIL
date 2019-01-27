@@ -32,7 +32,7 @@ public class RewriteServlet extends HttpServlet {
         Board board = boardService.getBoard(id);
 
         String content = board.getContent();
-        content = content.replaceAll("\n", "\n> ");
+        content = content.replaceAll("\n", "\n>");
         System.out.println(content);
         board.setContent(content);
 

@@ -39,13 +39,13 @@
 		<tbody>
 			<c:forEach items="${boards}" var="board">
 			<tr>
-				<td>${board.id}</td>
+				<td><a href="/read?id=${board.id}">${board.id}</a></td>
 				<td>
-					<c:forEach begin="1" end="${board.groupDepth}">&nbsp;</c:forEach>
+					<a href="/read?id=${board.id}"><c:forEach begin="1" end="${board.groupDepth}">ㄴ</c:forEach></a>
 					<a href="/read?id=${board.id}">${board.title}</a></td>
-				<td>${board.nickname}</td>
-				<td>${board.regdate}</td>
-				<td>${board.readCount}</td>
+				<td><a href="/read?id=${board.id}">${board.nickname}</a></td>
+				<td><a href="/read?id=${board.id}">${board.regdate}</a></td>
+				<td><a href="/read?id=${board.id}">${board.readCount}</a></td>
 			</tr>
 			</c:forEach>
 		</tbody>

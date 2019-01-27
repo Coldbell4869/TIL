@@ -17,7 +17,7 @@ import java.util.List;
 
 @WebServlet(name = "ListServlet", urlPatterns = "/list")
 public class ListServlet extends HttpServlet {
-    private static final int SIZE = 3; // 설정파일에서 읽어들이도록 수정한다.
+//    private static final int SIZE = 5; // 설정파일에서 읽어들이도록 수정한다.
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         // 1. page 값을 파라미터로 읽어들인다. 값이 없으면 기본값은 1페이지로 한다.

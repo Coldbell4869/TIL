@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BoardServiceImpl implements BoardService{
-    public static final int SIZE = 5;
+    public static final int SIZE = 10;
 
     @Override
     public List<Board> getBoards(int page) {

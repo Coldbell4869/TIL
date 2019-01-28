@@ -21,16 +21,16 @@ import static my.examples.springjdbc.dao.UserDaoSqls.*;
 @Repository
 public class UserDaoImpl implements UserDao{
 	private SimpleJdbcInsert simpleJdbcInsert;
-	private NamedParameterJdbcTemplate jdbc;
-	private RowMapper<User> rowMapper = BeanPropertyRowMapper.newInstance(User.class);
+		private NamedParameterJdbcTemplate jdbc;
+		private RowMapper<User> rowMapper = BeanPropertyRowMapper.newInstance(User.class);
 
-	// 스프링 컨테이너는 인스턴스를 생성하려고 생성자를 호출한다.
-	// 생성자를 호출하는데, DataSource를 주입한다. (생성자 주입)
+		// 스프링 컨테이너는 인스턴스를 생성하려고 생성자를 호출한다.
+		// 생성자를 호출하는데, DataSource를 주입한다. (생성자 주입)
 	public UserDaoImpl(DataSource dataSource) {
-		this.jdbc = new NamedParameterJdbcTemplate(dataSource);
-		this.simpleJdbcInsert = new SimpleJdbcInsert(dataSource)
-				.withTableName("user")
-				.usingGeneratedKeyColumns("id");
+			this.jdbc = new NamedParameterJdbcTemplate(dataSource);
+			this.simpleJdbcInsert = new SimpleJdbcInsert(dataSource)
+					.withTableName("user")
+					.usingGeneratedKeyColumns("id");
 	}
 
 	@Override

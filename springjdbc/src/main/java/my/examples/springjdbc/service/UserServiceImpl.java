@@ -42,7 +42,9 @@ public class UserServiceImpl implements UserService{
 
     @Override
     @Transactional(readOnly = true)
-    public List<User> getUsers() {
-        return userDao.selectAll();
+    public List<User> getUsers(int page) {
+        int start = page * 3 - 3;
+
+        return userDao.selectByPage(start, 3);
     }
 }

@@ -26,31 +26,35 @@ public class BoardServiceImpl implements BoardService{
     @Override
     @Transactional(readOnly = true)
     public List<Board> getBoards(int page) {
-        return null;
+        int start = page * 3 - 3;
+
+        return boardDao.getBoards(start, 3);
     }
 
-    @Override
-    @Transactional(readOnly = true)
-    public Board getBoard(Long id) {
-        boardDao.updateReadCount(id);
-        return boardDao.getBoard(id);
-    }
-
-    @Override
-    @Transactional
-    public void deleteBoard(Long id) {
-
-    }
-
-    @Override
-    @Transactional
-    public void addBoard(Board board) {
-
-    }
+//    @Override
+//    @Transactional(readOnly = true)
+//    public Board getBoard(Long id) {
+//        boardDao.updateReadCount(id);
+//        return boardDao.getBoard(id);
+//    }
+//
+//    @Override
+//    @Transactional
+//    public void deleteBoard(Long id) {
+//
+//    }
 
     @Override
     @Transactional
-    public void addReBoard(Board board) {
-
+    public Board addBoard(Board board) {
+        Long id = boardDao.addBoard(board);
+        board.setId(id);
+        return board;
     }
+
+//    @Override
+//    @Transactional
+//    public void addReBoard(Board board) {
+//
+//    }
 }

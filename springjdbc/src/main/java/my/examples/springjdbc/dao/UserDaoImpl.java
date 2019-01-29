@@ -34,7 +34,7 @@ public class UserDaoImpl implements UserDao{
 	}
 
 	@Override
-	public List<User> selectAll() {
+	public List<User> selectByPage(int start, int limit) {
 
 // 이름없는 객체
 //				return jdbc.query("select id, nickname, email, passwd, regdate from user",
@@ -63,7 +63,10 @@ public class UserDaoImpl implements UserDao{
 //						return user;
 //					});
 
-		return jdbc.query(SELECT_USERS, rowMapper);
+		Map<String, Object> paramMap = new HashMap<>();
+		paramMap.put("start", start);
+		paramMap.put("limit", limit);
+		return jdbc.query(SELECT_USERS, paramMap, rowMapper);
 	}
 
 	@Override

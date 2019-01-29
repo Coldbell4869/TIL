@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface UserService {
     public User addUser(User user);
+    public List<User> getUsers(int page);
     public User getUserByEmail(String email);
-    public List<User> getUsers();
 }

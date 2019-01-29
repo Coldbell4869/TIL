@@ -17,14 +17,13 @@ public class SpringApplication {
                 new AnnotationConfigApplicationContext(ApplicationConfig.class);
 
         UserDao userDao = applicationContext.getBean(UserDao.class);
-        BoardDao boardDao = applicationContext.getBean(BoardDao.class);
 
-        List<User> users = userDao.selectAll();
-        for(User user : users){
-            System.out.println(user);
-        }
-        User user = userDao.selectUserByEmail("urstory2@gmail.com");
-        System.out.println(user);
+//        List<User> users = userDao.selectByPage(;
+//        for(User user : users){
+//            System.out.println(user);
+//        }
+//        User user = userDao.selectUserByEmail("urstory2@gmail.com");
+//        System.out.println(user);
 
 //        User user = new User();
 //        user.setName("홍길동");
@@ -34,5 +33,6 @@ public class SpringApplication {
 //        long id = userDao.addUser(user);
 //        System.out.println(id);
 
+        userDao.updateUser(8L, "고길동", "둘리아빠");
     }
 }

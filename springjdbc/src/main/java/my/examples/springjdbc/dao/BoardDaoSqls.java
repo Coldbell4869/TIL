@@ -4,7 +4,7 @@ public class BoardDaoSqls {
     public static final String SELECT_BY_ID =
             "select id, title, user_id, nickname, regdate, read_count, group_no, group_seq, group_depth, content from board where id = :id";
     public static final String SELECT_BY_PAGING =
-            "select id, title, user_id, nickname, regdate, read_count, group_no, group_seq, group_depth  from board b order by group_no desc, group_seq limit :start, :limit";
+            "select id, title, user_id, nickname, regdate, read_count, group_no, group_seq, group_depth from board order by group_no desc, group_seq limit :start, :limit";
     public static final String INSERT =
             "insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth) " +
                     "values( :title, :userId, :nickname, :content ,  0 , 0, 0 )";

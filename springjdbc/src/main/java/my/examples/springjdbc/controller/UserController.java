@@ -21,7 +21,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    //  @RequestMapping(method=GET, path="/list") 와 같은 것
+    //  @RequestMapping(method=GET, path="/test") 와 같은 것
     @GetMapping("/test")
     public String main(
             @RequestParam(name = "page", required = false, defaultValue = "1") int page, Model model){

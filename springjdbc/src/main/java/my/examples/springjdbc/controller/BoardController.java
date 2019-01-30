@@ -38,8 +38,8 @@ public class BoardController {
         return "view";
     }
 
-    @GetMapping("/delete"){
-    }
+//    @GetMapping("/delete"){
+//    }
 
     @GetMapping("/writeform")
     public String writeform(){ return "writeform"; }

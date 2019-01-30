@@ -12,7 +12,7 @@ import java.util.List;
 public class BoardServiceImpl implements BoardService{
     //    @Autowired
     private BoardDao boardDao;
-
+    private static final int SIZE = 10;
     // BoardServiceImpl객체를 생성하려고 BoardDaoImpl 객체를 주입한다.
     public BoardServiceImpl(BoardDao boardDao){
         this.boardDao = boardDao;
@@ -26,11 +26,20 @@ public class BoardServiceImpl implements BoardService{
     @Override
     @Transactional(readOnly = true)
     public List<Board> getBoards(int page) {
-        int start = page * 3 - 3;
 
-        return boardDao.getBoards(start, 3);
+        int start = page * SIZE - SIZE;
+        int limit = SIZE;
+
+        return boardDao.getBoards(start, limit);
     }
 
+    @Override
+    @Transactional(readOnly = true)
+    public Board getBoard(Long id) {
+        Board board = boardDao.getBoard(id);
+//        boardDao.updateReadCount(id);
+        return board;
+    }
 //    @Override
 //    @Transactional(readOnly = true)
 //    public Board getBoard(Long id) {
@@ -57,4 +66,18 @@ public class BoardServiceImpl implements BoardService{
 //    public void addReBoard(Board board) {
 //
 //    }
+
+
+
+
+    @Override
+    @Transactional
+    public void deleteBoard(Long id) {
+        boardDao.deleteBoard(id);
+    }
+
+    @Override
+    public void addReBoard(Board board) {
+
+    }
 }

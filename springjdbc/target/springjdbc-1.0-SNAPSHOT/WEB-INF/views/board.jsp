@@ -34,13 +34,13 @@
 		<tbody>
 			<c:forEach items="${boards}" var="board">
 			<tr>
-				<td><a href="/read?id=${board.id}">${board.id}</a></td>
+				<td><a href="/view?id=${board.id}">${board.id}</a></td>
 				<td>
-					<a href="/read?id=${board.id}"><c:forEach begin="1" end="${board.groupDepth}">ㄴ</c:forEach></a>
-					<a href="/read?id=${board.id}">${board.title}</a></td>
-				<td><a href="/read?id=${board.id}">${board.nickname}</a></td>
-				<td><a href="/read?id=${board.id}">${board.regdate}</a></td>
-				<td><a href="/read?id=${board.id}">${board.readCount}</a></td>
+					<a href="/view?id=${board.id}"><c:forEach begin="1" end="${board.groupDepth}">[RE]</c:forEach></a>
+					<a href="/view?id=${board.id}">${board.title}</a></td>
+				<td><a href="/view?id=${board.id}">${board.nickname}</a></td>
+				<td><a href="/view?id=${board.id}">${board.regdate}</a></td>
+				<td><a href="/view?id=${board.id}">${board.readCount}</a></td>
 			</tr>
 			</c:forEach>
 		</tbody>
@@ -72,7 +72,7 @@
 	
 	<div class="box1" style="width:40%; margin:3% auto 10%;">
     <div class="form-group" style="width:17%; margin-right:2%; float:left;">
-        <label class="sr-only" for="sop">sop</label>
+        <label class="sr-only" >sop</label>
         <select name=sop class="form-control">
             <option value=제목>제목</option>
             <option value=내용>내용</option>
@@ -80,7 +80,7 @@
         </select>
     </div>
 	<div class="form-group" style="width:60%; float:left;">
-        <label class="sr-only" for="stx">stx</label>
+        <label class="sr-only" >stx</label>
         <input name=stx maxlength=15 size=10 itemname="검색어" required value='' class="form-control">
     </div>
     <div class="form-group" >

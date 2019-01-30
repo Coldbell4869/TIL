@@ -12,7 +12,7 @@ public class BoardDaoSqls {
             "select LAST_INSERT_ID()";
     public static final String UPDATE_LAST_INSERT_ID =
             "update board set group_no = :groupNo where id = :id";
-    public static final String UPDATE =
+    public static final String UPDATE_READ_COUNT =
             "update board set read_count = read_count + 1 where id = :id";
     public static final String DELETE =
             "delete from board where id = :id";

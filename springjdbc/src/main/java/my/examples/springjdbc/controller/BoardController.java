@@ -9,7 +9,9 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.servlet.ModelAndView;
 
+import javax.activation.CommandMap;
 import javax.servlet.http.HttpSession;
 import java.util.List;
 
@@ -28,8 +30,18 @@ public class BoardController {
         return "board"; // view name
     }
 
-    @GetMapping("/writeform")
+    @GetMapping("/view")
+    public String view(long id, Model model){
+        Board board = boardService.getBoard(id);
+        boardService.getBoard(id);
+        model.addAttribute("board", board);
+        return "view";
+    }
 
+    @GetMapping("/delete"){
+    }
+
+    @GetMapping("/writeform")
     public String writeform(){ return "writeform"; }
 
     @PostMapping("/write")
@@ -51,5 +63,6 @@ public class BoardController {
 
         return "redirect:/board";
     }
+
 }
 

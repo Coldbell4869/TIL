@@ -74,12 +74,16 @@ public class BoardDaoImpl implements BoardDao{
 
     @Override
     public void deleteBoard(Long id) {
-
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("id", id);
+        jdbc.query(DELETE, paramMap, rowMapper);
     }
 
     @Override
     public void updateReadCount(long id) {
-
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("id", id);
+        jdbc.query(UPDATE_READ_COUNT, paramMap, rowMapper);
     }
 
     @Override

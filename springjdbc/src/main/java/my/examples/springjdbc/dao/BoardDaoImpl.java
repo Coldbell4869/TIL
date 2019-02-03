@@ -48,42 +48,50 @@ public class BoardDaoImpl implements BoardDao{
     }
 
     @Override
-    public long addBoard(Board board) {
+    public void addBoard(Board board) {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("title", board.getTitle());
-        paramMap.put("user_id", board.getUserId());
+//        paramMap.put("user_id", board.getUserId());
         paramMap.put("nickname", board.getNickname());
         paramMap.put("content", board.getContent());
         paramMap.put("group_no", board.getGroupNo());
         paramMap.put("group_seq", board.getGroupSeq());
         paramMap.put("group_depth", board.getGroupDepth());
-        Number number = simpleJdbcInsert.executeAndReturnKey(paramMap);
-        return number.longValue();    }
+        jdbc.update(INSERT, paramMap);
+//        return number.longValue();
+    }
     //            "insert into board (title, user_id, nickname, content, group_no, group_seq, group_depth) " +
     //                    "values( :title, :userId, :nickname, :content ,  0 , 0, 0 )";
 
     @Override
     public Long getLastInsertId() {
-        return null;
+        Long lastId = 0L;
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("lastID", lastId);
+        jdbc.query(SELECT_LAST_INSERT_ID, paramMap, rowMapper);
+        return lastId;
     }
 
     @Override
     public void updateLastInsertId(Long id) {
-
+        Map<String, Object> paramMap = new HashMap<>();
+        paramMap.put("group_no", getBoard(id).getGroupNo());
+        paramMap.put("id", getBoard(id).getId());
+        jdbc.update(UPDATE_LAST_INSERT_ID, paramMap);
     }
 
     @Override
     public void deleteBoard(Long id) {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("id", id);
-        jdbc.query(DELETE, paramMap, rowMapper);
+        jdbc.update(DELETE, paramMap);
     }
 
     @Override
     public void updateReadCount(long id) {
         Map<String, Object> paramMap = new HashMap<>();
         paramMap.put("id", id);
-        jdbc.query(UPDATE_READ_COUNT, paramMap, rowMapper);
+        jdbc.update(UPDATE_READ_COUNT, paramMap);
     }
 
     @Override

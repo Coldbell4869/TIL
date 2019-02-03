@@ -12,9 +12,10 @@ public interface BoardService {
     List<Board> getBoards(int page);
     Board getBoard(Long id);
     void deleteBoard(Long id);
-    Board addBoard(Board board);
-    void addReBoard(Board board);
 
+    void addBoard(Board board);
+    void addReBoard(Board board);
+    void updateReadCount(Long id);
 
 //    public Board getBoard(Long id);
 //    public void deleteBoard(Long id);

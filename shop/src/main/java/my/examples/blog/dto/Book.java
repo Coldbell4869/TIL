@@ -1,4 +1,4 @@
-package my.examples.shop.dto;
+package my.examples.blog.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

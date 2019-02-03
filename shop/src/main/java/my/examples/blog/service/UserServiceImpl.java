@@ -1,6 +1,6 @@
-package my.examples.shop.service;
+package my.examples.blog.service;
 
-import my.examples.shop.dao.UserDao;
+import my.examples.blog.dao.UserDao;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

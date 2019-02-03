@@ -26,10 +26,8 @@ public class BoardServiceImpl implements BoardService{
     @Override
     @Transactional(readOnly = true)
     public List<Board> getBoards(int page) {
-
         int start = page * SIZE - SIZE;
         int limit = SIZE;
-
         return boardDao.getBoards(start, limit);
     }
 
@@ -37,7 +35,6 @@ public class BoardServiceImpl implements BoardService{
     @Transactional(readOnly = true)
     public Board getBoard(Long id) {
         Board board = boardDao.getBoard(id);
-//        boardDao.updateReadCount(id);
         return board;
     }
 //    @Override
@@ -55,20 +52,11 @@ public class BoardServiceImpl implements BoardService{
 
     @Override
     @Transactional
-    public Board addBoard(Board board) {
-        Long id = boardDao.addBoard(board);
-        board.setId(id);
-        return board;
+    public void addBoard(Board board) {
+        boardDao.addBoard(board);
+        Long lastInsertId = boardDao.getLastInsertId();
+        boardDao.updateLastInsertId(lastInsertId);
     }
-
-//    @Override
-//    @Transactional
-//    public void addReBoard(Board board) {
-//
-//    }
-
-
-
 
     @Override
     @Transactional
@@ -77,7 +65,13 @@ public class BoardServiceImpl implements BoardService{
     }
 
     @Override
+    @Transactional
     public void addReBoard(Board board) {
+    }
 
+    @Override
+    @Transactional
+    public void updateReadCount(Long id) {
+        boardDao.updateReadCount(id);
     }
 }

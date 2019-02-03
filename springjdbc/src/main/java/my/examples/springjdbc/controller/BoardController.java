@@ -33,16 +33,21 @@ public class BoardController {
     @GetMapping("/view")
     public String view(long id, Model model){
         Board board = boardService.getBoard(id);
-        boardService.getBoard(id);
         model.addAttribute("board", board);
+        boardService.updateReadCount(id);
         return "view";
     }
 
-//    @GetMapping("/delete"){
-//    }
+    @GetMapping("/delete")
+    public String delete(Long id){
+        boardService.deleteBoard(id);
+        return "delete";
+    }
 
     @GetMapping("/writeform")
-    public String writeform(){ return "writeform"; }
+    public String writeform(){
+        return "writeform";
+    }
 
     @PostMapping("/write")
     public String write(@RequestParam(name = "name") String name,

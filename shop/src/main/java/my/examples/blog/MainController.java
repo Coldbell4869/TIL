@@ -1,7 +1,7 @@
-package my.examples.shop;
+package my.examples.blog;
 
-import my.examples.shop.dto.Book;
-import my.examples.shop.service.UserService;
+import my.examples.blog.dto.Book;
+import my.examples.blog.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

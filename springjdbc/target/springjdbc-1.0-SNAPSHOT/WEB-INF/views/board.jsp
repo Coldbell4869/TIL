@@ -14,14 +14,9 @@
 	
 	<h1 style="text-align:center; margin-top:50px;">게시판 보기 </h1>
 	<div style="width:50%; margin:0 auto; padding-top:50px;">
-		<c:if test="${sessionScope.logininfo == null}">
 			<a class="btn btn-default" href="/login" id="" style='width:15%; float:right;'>로그인</a>
-		</c:if>
-		<c:if test="${sessionScope.logininfo != null}">
-			${sessionScope.logininfo.nickname}&nbsp;
-			<a class="btn btn-default" href="/write" id="" style='width:15%; float:right;'>글쓰기</a> &nbsp;
+			<a class="btn btn-default" href="/writeform" id="" style='width:15%; float:right;'>글쓰기</a> &nbsp;
 			<a class="btn btn-default" href="/logout" id="" style='width:15%; float:right;'>로그아웃</a>
-		</c:if>
 	</div>
 	<table class = "table table-bordered table-hover" style='width:50%; margin:50px auto;'>
 		<thead style="background-color:#ebebeb;">

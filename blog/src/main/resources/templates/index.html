@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Spring Boot!</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>'
+
+<h1>Hello Spring Boot </h1>
+    <table>
+    <tbody>
+        <tr th:each="account : ${list}">
+                <td><span th:text="${account.email}"></span></td>
+                <td><span th:text="${account.name}"></span></td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+
+</html>

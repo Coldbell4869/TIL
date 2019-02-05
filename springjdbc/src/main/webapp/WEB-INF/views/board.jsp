@@ -1,124 +1,130 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ page contentType="text/html;charset=UTF-8" language="Java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
     <head>
         <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Board</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-9dACWymWSkhCeCgbjV6xqS20Luu4ue6QnEvr+nMXpPMwIq/OB89AoRh27Flsrxzs" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
     </head>
-	
-	
+
 <body>
-	
-	<h1 style="text-align:center; margin-top:50px;">게시판 보기 </h1>
-	<div style="width:50%; margin:0 auto; padding-top:50px;">
-			<a class="btn btn-default" href="/login" id="" style='width:15%; float:right;'>로그인</a>
-			<a class="btn btn-default" href="/writeform" id="" style='width:15%; float:right;'>글쓰기</a> &nbsp;
-			<a class="btn btn-default" href="/logout" id="" style='width:15%; float:right;'>로그아웃</a>
+<%--상단 내비바 시작--%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary col-lg-12">
+	<div class="container">
+	<a class="navbar-brand" href="/board">Coldpaper Board</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="/board">Board</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://coldbell4869.github.io/" target="_blank">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://github.com/coldbell4869" target="_blank">Github</a>
+				</li>
+			</ul>
+				<%--로그인/로그아웃 버튼 시작--%>
+				<ul class="nav navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="/login" id="">Login</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/joinform" id="">Join</a>
+					</li>
+					<%--<li class="nav-item">--%>
+						<%--<a class="nav-link" href="/logout" id="">Logout</a>--%>
+					<%--</li>--%>
+				</ul>
+		<%--로그인/로그아웃 버튼 끝--%>
+		</div>
 	</div>
-	<table class = "table table-bordered table-hover" style='width:50%; margin:50px auto;'>
-		<thead style="background-color:#ebebeb;">
-			<th width="10%">글번호</th>
-			<th width="45%">제목</th>
-			<th width="15%">글쓴이</th>
-			<th width="15%">날짜</th>
-			<th width="15%">조회수</th>
+</nav>
+<%--상단 내비바 끝--%>
+
+<div class="container">
+
+<%--게시판 테이블 시작--%>
+	<table class="table table-hover col-sm-12">
+		<thead>
+		<tr>
+			<th scope="col" width="10%">#</th>
+			<th scope="col" width="55%">Title</th>
+			<th scope="col" width="10%">Nickname</th>
+			<th scope="col" width="15%">Regdate</th>
+			<th scope="col" width="10%">Hits</th>
+		</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="${boards}" var="board">
-			<tr>
-				<td><a href="/view?id=${board.id}">${board.id}</a></td>
-				<td>
-					<a href="/view?id=${board.id}"><c:forEach begin="1" end="${board.groupDepth}">[RE]</c:forEach></a>
-					<a href="/view?id=${board.id}">${board.title}</a></td>
-				<td><a href="/view?id=${board.id}">${board.nickname}</a></td>
-				<td><a href="/view?id=${board.id}">${board.regdate}</a></td>
-				<td><a href="/view?id=${board.id}">${board.readCount}</a></td>
-			</tr>
-			</c:forEach>
+		<c:forEach items="${boards}" var="board">
+		<tr>
+			<td>${board.id}</td>
+			<td>
+				<a href="/view?id=${board.id}">
+				<c:forEach begin="1" end="${board.groupDepth}">[RE]</c:forEach>
+				${board.title}</a></td>
+			<td>${board.nickname}</td>
+			<td>${board.regdate}</td>
+			<td>${board.readCount}</td>
+		</tr>
+		</c:forEach>
 		</tbody>
 	</table>
-	
-	
-	<div class="text-center" style="width:50%; margin:0 auto; margin-top:50px;">
-		</br>
-		<ul class = "pagination">
-			<li><a href="#">&laquo;</a></li>
-			<li><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-			<li><a href="#">7</a></li>
-			<li><a href="#">8</a></li>	
-			<li><a href="#">9</a></li>
-			<li><a href="#">10</a></li>
-			<li><a href="#">&raquo;</a></li>
-		</ul>
+<%--게시판 테이블 끝--%>
+
+	<%--페이지네이션 + 검색 시작--%>
+	<div class="row">
+		<div class="col-lg-4 text-center">
+			<form class="form-inline justify-content-center">
+				<div class="form-group">
+					<select class="custom-select">
+						<option selected="1">Title</option>
+						<option value="2">Nickname</option>
+						<option value="3">Content</option>
+					</select>
+					<input class="form-control" type="text" placeholder="Search" maxlength="15">
+					<button class="btn btn-primary" type="submit">Search</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="col-lg-4 text-center">
+			<ul class="pagination justify-content-center">
+				<li class="page-item disabled">
+					<a class="page-link" href="#">&laquo;</a>
+				</li>
+				<li class="page-item active">
+					<a class="page-link" href="#">1</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">2</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">3</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">4</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">5</a>
+				</li>
+				<li class="page-item">
+					<a class="page-link" href="#">&raquo;</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-lg-4 text-center">
+			<a class="btn btn-primary btn-lg" href="/writeform" role="button">Write</a>
+		</div>
 	</div>
-	
-
-	
-	
-	
-	
-	<div class="box1" style="width:40%; margin:3% auto 10%;">
-    <div class="form-group" style="width:17%; margin-right:2%; float:left;">
-        <label class="sr-only" >sop</label>
-        <select name=sop class="form-control">
-            <option value=제목>제목</option>
-            <option value=내용>내용</option>
-            <option value=작성자>작성자</option>
-        </select>
-    </div>
-	<div class="form-group" style="width:60%; float:left;">
-        <label class="sr-only" >stx</label>
-        <input name=stx maxlength=15 size=10 itemname="검색어" required value='' class="form-control">
-    </div>
-    <div class="form-group" >
-        <button class="btn " style="float: right; width:17%;">검색</button>
-    </div>
-	</div>
-
-
-    
+	<%--페이지네이션 + 검색 끝--%>
 </body>
-
-
-
-
-
-	
-
 </html>
-
-
-
-
-
-<!--
-<form action="http://localhost/hidden.php">
-        <input type="text" name="id" >
-        <input type="hidden" name="pw" value="pw">
-        <input type="submit">
-    </form>
-    
-	<div class="container">
-  <h2>Dropdowns</h2>
-  <p>The .divider class is used to separate links inside the dropdown menu with a thin horizontal line:</p>
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Tutorials
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="#">HTML</a></li>
-      <li><a href="#">CSS</a></li>
-      <li><a href="#">JavaScript</a></li>
-      <li class="divider"></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-  </div>
-</div>  
--->

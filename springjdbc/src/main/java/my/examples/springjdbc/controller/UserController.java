@@ -41,7 +41,7 @@ public class UserController {
                        @RequestParam(name = "nickname") String nickname,
                        @RequestParam(name = "email") String email,
                        @RequestParam(name = "passwd") String passwd,
-                       @RequestHeader(name = "Accept") String accept,
+                       @RequestHeader(name = "accept") String accept,
                        HttpSession session) {
 
         // 값에 검증.
@@ -50,10 +50,10 @@ public class UserController {
             throw new IllegalArgumentException("이름을 입력하세요.");
 
         User user = new User();
+        user.setName(name);
         user.setPasswd(passwd);
         user.setNickname(nickname);
         user.setEmail(email);
-        user.setName(name);
 
         userService.addUser(user);
 

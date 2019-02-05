@@ -9,10 +9,7 @@ import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.servlet.ModelAndView;
 
-import javax.activation.CommandMap;
-import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -23,7 +20,7 @@ public class BoardController {
         this.boardService = boardService;
     }
     @GetMapping("/board")
-    public String main(
+    public String board(
             @RequestParam(name = "page", required = false, defaultValue = "1") int page, Model model) {
         List<Board> boards = boardService.getBoards(page);
         model.addAttribute("boards", boards);

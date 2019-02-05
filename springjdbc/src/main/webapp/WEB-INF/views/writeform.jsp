@@ -1,49 +1,90 @@
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<!DOCTYPE html>
-<html lang="en">
+<%@ page contentType="text/html;charset=UTF-8" language="Java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
 <head>
-    <title>WriteForm</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="wrieform.css">
+    <title>Writeform</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-9dACWymWSkhCeCgbjV6xqS20Luu4ue6QnEvr+nMXpPMwIq/OB89AoRh27Flsrxzs" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<form action="/write" method="post">
-<div class="container">
-    <div class="page-header">
-        <h2>글쓰기</h2>
+<%--상단 내비바 시작--%>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary col-lg-12">
+    <div class="container">
+        <a class="navbar-brand" href="/board">Coldpaper Board</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/board">Board</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://coldbell4869.github.io/" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/coldbell4869" target="_blank">Github</a>
+                </li>
+            </ul>
+            <%--로그인/로그아웃 버튼 시작--%>
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login" id="">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/joinform" id="">Join</a>
+                </li>
+                <%--<li class="nav-item">--%>
+                <%--<a class="nav-link" href="/logout" id="">Logout</a>--%>
+                <%--</li>--%>
+            </ul>
+        </div>
     </div>
-    <div class="content">
-        <div class="row">
+</nav>
+<%--상단 내비바 끝--%>
 
-
-                <div class="form-group col-md-4 cos-xs-4" style="float: left;">
-                    <label for="name">이름:</label>
-                    <%--<label>${sessionScope.logininfo.nickname}</label>--%>
-                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name">
-                </div>
-
-                <div class="form-group col-md-4 offset-md-4 cos-xs-4" style="float: right;">
-                </div>
-
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">
+            <%--왼쪽공간--%>
         </div>
 
+        <div class="col-lg-8">
+            <form action="/write" method="post">
+                <fieldset>
+                    <legend>Writeform</legend>
 
-        <div class="form-group">
-            <label for="title">제목:</label>
-            <input type="text" class="form-control" id="title" placeholder="Enter Title" name="title">
+                    <div class="form-group">
+                        <label for="nickname">nickname</label>
+                        <input type="text" class="form-control" id="nickname" placeholder="nickname">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="title">title</label>
+                        <input type="text" class="form-control" id="title" placeholder="title">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="content">content</label>
+                        <textarea class="form-control" id="content" rows="10"></textarea>
+                    </div>
+
+                    <div class="buttons text-right">
+                        <button type="submit" class="btn btn-success">Submit</button>
+                        <a class="btn btn-danger" href="/board" role="button">Back</a>
+                    </div>
+
+                </fieldset>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="content">내용:</label>
-            <textarea class="form-control" rows="12" id="content" name="content"></textarea>
-        </div>
-        <div class="buttons" style="float: right;">
-            <button type="button" class="btn btn-default" onClick="location.href='/list'">취소</button>
-            <input type="submit" class="btn btn-default" value="등록"/>
+
+        <div class="col-lg-2">
+            <%--오른쪽공간--%>
         </div>
     </div>
 </div>

@@ -7,31 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f2534a1-48f7-45de-84df-e917be86e647" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/loginformorigin.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/controller/BoardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/UserDaoSqls.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/java/my/examples/springjdbc/dao/UserDaoSqls.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/board.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/board.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/joinform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/joinform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/loginform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/loginform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/loginformorigin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/loginformorigin.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/writeform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/src/main/webapp/WEB-INF/views/writeform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/UserDaoSqls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/classes/my/examples/springjdbc/dao/UserDaoSqls.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/dao/UserDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/dao/UserDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/dao/UserDaoSqls.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/classes/my/examples/springjdbc/dao/UserDaoSqls.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/board.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/board.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/joinform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/joinform.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/loginform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/loginform.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/writeform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/target/springjdbc-1.0-SNAPSHOT/WEB-INF/views/writeform.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/service/UserServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="245">
@@ -90,10 +76,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserLoginSerlvet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
+            <state relative-caret-position="410">
               <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
             </state>
           </provider>
@@ -462,12 +448,12 @@
       <workItem from="1548908872050" duration="333000" />
       <workItem from="1548932478791" duration="5096000" />
       <workItem from="1549269399164" duration="169000" />
-      <workItem from="1549359272250" duration="4726000" />
+      <workItem from="1549359272250" duration="5323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47977000" />
+    <option name="totallyTimeSpent" value="48574000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -757,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserLoginSerlvet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/dao/BoardDaoSQL.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -823,6 +802,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
           <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/jdbcboard/servlet/UserLoginSerlvet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
         </state>
       </provider>
     </entry>

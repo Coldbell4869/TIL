@@ -80,6 +80,12 @@
                         <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password">
                     </div>
 
+                    <div class="form-group">
+                        <label for="passwdCheck">Password Check</label>
+                        <input type="password" class="form-control" id="passwdCheck" name="passwdCheck" aria-describedby="passwdCheckHelp" placeholder="Password Check">
+                        <small id="passwdCheckHelp" class="form-text text-muted">입력한 비밀번호를 다시 확인해주세요.</small>
+                    </div>
+
                     <div class="buttons text-right">
                         <button type="submit" class="btn btn-success">Join</button>
                         <a class="btn btn-danger" href="/board" role="button">Back</a>

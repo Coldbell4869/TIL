@@ -48,7 +48,8 @@ public class UserController {
     public String join(@RequestParam(name = "name") String name,
                        @RequestParam(name = "nickname") String nickname,
                        @RequestParam(name = "email") String email,
-                       @RequestParam(name = "passwd") String passwd
+                       @RequestParam(name = "passwd") String passwd,
+                        @RequestParam(name= "passwdCheck") String passwdCheck
 //                      ,
 //                       @RequestHeader(name = "accept") String accept,
 //                       HttpSession session
@@ -58,6 +59,10 @@ public class UserController {
         Assert.hasLength(name, "이름을 입력하세요.");
         if (name == null || name.length() <= 1)
             throw new IllegalArgumentException("이름을 입력하세요.");
+
+        Assert.isTrue(true, "비밀번호가 다릅니다.");
+        if (!passwd.equals(passwdCheck))
+            throw new IllegalArgumentException("비밀번호가 다릅니다.");
 
         PasswordEncoder passwordEncoder =
                 PasswordEncoderFactories.createDelegatingPasswordEncoder();

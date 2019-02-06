@@ -60,12 +60,12 @@
                     <legend>Login</legend>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@coldpaper.com">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="example@coldpaper.com">
                     </div>
 
                     <div class="form-group">
-                        <label for="passwd1">Password</label>
-                        <input type="password" class="form-control" id="passwd1" placeholder="Password">
+                        <label for="passwd">Password</label>
+                        <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password">
                     </div>
 
                     <div class="buttons text-right">

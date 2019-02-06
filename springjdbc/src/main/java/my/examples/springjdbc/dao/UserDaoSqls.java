@@ -9,4 +9,6 @@ public class UserDaoSqls {
 
 	public static final String UPDATE_USER =
 			"update user set name = :name, nickname = :nickname where id = :id";
+
+	public static final String INSERT_USER = "INSERT INTO user (name, nickname, email, passwd) VALUES ( :name, :nickname, :email, :passwd)";
 }

@@ -37,7 +37,7 @@
 						<a class="nav-link" href="/login" id="">Login</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/joinform" id="">Join</a>
+						<a class="nav-link" href="/join" id="">Join</a>
 					</li>
 					<%--<li class="nav-item">--%>
 						<%--<a class="nav-link" href="/logout" id="">Logout</a>--%>
@@ -122,7 +122,7 @@
 		</div>
 
 		<div class="col-lg-4 text-center">
-			<a class="btn btn-primary btn-lg" href="/writeform" role="button">Write</a>
+			<a class="btn btn-primary btn-lg" href="/write" role="button">Write</a>
 		</div>
 	</div>
 	<%--페이지네이션 + 검색 끝--%>

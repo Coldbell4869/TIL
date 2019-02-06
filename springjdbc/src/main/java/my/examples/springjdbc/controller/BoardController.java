@@ -41,7 +41,7 @@ public class BoardController {
         return "delete";
     }
 
-    @GetMapping("/writeform")
+    @GetMapping("/write")
     public String writeform(){
         return "writeform";
     }

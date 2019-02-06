@@ -84,7 +84,6 @@ public class UserDaoImpl implements UserDao{
 
 	@Override
 	public Long addUser(User user) {
-
 		Map<String, Object> paramMap = new HashMap<>();
 		paramMap.put("name", user.getName());
 		paramMap.put("nickname", user.getNickname());

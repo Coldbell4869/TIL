@@ -37,7 +37,7 @@
                     <a class="nav-link" href="/login" id="">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/joinform" id="">Join</a>
+                    <a class="nav-link" href="/join" id="">Join</a>
                 </li>
                 <%--<li class="nav-item">--%>
                 <%--<a class="nav-link" href="/logout" id="">Logout</a>--%>
@@ -60,23 +60,24 @@
                     <legend>Joinform</legend>
 
                     <div class="form-group">
-                        <label for="name">name</label>
-                        <input type="text" class="form-control" id="name" placeholder="name">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="name">
                     </div>
 
                     <div class="form-group">
-                        <label for="nickname">nickname</label>
-                        <input type="text" class="form-control" id="nickname" placeholder="nickname">
+                        <label for="nickname">Nickname</label>
+                        <input type="text" class="form-control" id="nickname" name="nickname" placeholder="nickname">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="example@coldpaper.com">
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="example@coldpaper.com">
+                        <small id="emailHelp" class="form-text text-muted">로그인 시 아이디로 사용됩니다.</small>
                     </div>
 
                     <div class="form-group">
-                        <label for="passwd1">Password</label>
-                        <input type="password" class="form-control" id="passwd1" placeholder="Password">
+                        <label for="passwd">Password</label>
+                        <input type="password" class="form-control" id="passwd" name="passwd" placeholder="Password">
                     </div>
 
                     <div class="buttons text-right">

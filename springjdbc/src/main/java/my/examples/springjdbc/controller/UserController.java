@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.password.PasswordEncoder;
+
 
 import javax.servlet.http.HttpSession;
 import java.util.List;
@@ -31,7 +34,12 @@ public class UserController {
 
     }
 
-    @GetMapping("/joinform")
+    @GetMapping("/login")
+    public String login() {
+        return "loginform";
+    }
+
+    @GetMapping("/join")
     public String joinform() {
         return "joinform";
     }
@@ -40,24 +48,32 @@ public class UserController {
     public String join(@RequestParam(name = "name") String name,
                        @RequestParam(name = "nickname") String nickname,
                        @RequestParam(name = "email") String email,
-                       @RequestParam(name = "passwd") String passwd,
-                       @RequestHeader(name = "accept") String accept,
-                       HttpSession session) {
+                       @RequestParam(name = "passwd") String passwd
+//                      ,
+//                       @RequestHeader(name = "accept") String accept,
+//                       HttpSession session
+                        ) {
 
         // 값에 검증.
         Assert.hasLength(name, "이름을 입력하세요.");
         if (name == null || name.length() <= 1)
             throw new IllegalArgumentException("이름을 입력하세요.");
 
+        PasswordEncoder passwordEncoder =
+                PasswordEncoderFactories.createDelegatingPasswordEncoder();
+
+        // 암호화 하는 코드
+        String encodePasswd = passwordEncoder.encode(passwd);
+
         User user = new User();
         user.setName(name);
-        user.setPasswd(passwd);
+        user.setPasswd(encodePasswd);
         user.setNickname(nickname);
         user.setEmail(email);
 
         userService.addUser(user);
 
-        return "redirect:/test";
+        return "redirect:/login";
 
     }
 }

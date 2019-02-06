@@ -37,7 +37,7 @@
                     <a class="nav-link" href="/login" id="">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/joinform" id="">Join</a>
+                    <a class="nav-link" href="/join" id="">Join</a>
                 </li>
                 <%--<li class="nav-item">--%>
                 <%--<a class="nav-link" href="/logout" id="">Logout</a>--%>

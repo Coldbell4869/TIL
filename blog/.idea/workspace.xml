@@ -2,22 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a1a125-7ae4-46a2-af1a-43d3fa7276c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/my/examples/blog/repository/DepartmentRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/Repository/DepartmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Country.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/JobHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/JobHistoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Region.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../hr/src/test/java/my/examples/hr/repository/DepartmentRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/HrApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/Repository/DepartmentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Country.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Department.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Employee.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Job.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/JobHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/JobHistoryId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Location.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/java/my/examples/hr/domain/Region.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/test/java/my/examples/hr/HrApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hr/src/test/java/my/examples/hr/repository/DepartmentRepositoryTest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springjdbc/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -152,7 +158,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
@@ -257,7 +263,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549515580025" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549523191503" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -305,7 +311,7 @@
     <option name="totallyTimeSpent" value="4695000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="23" width="1440" height="877" extended-state="1" />
+    <frame x="-1" y="23" width="1440" height="877" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2546495" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

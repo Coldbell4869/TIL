@@ -15,10 +15,9 @@ public class Country {
     @Id
     private String countryId;
     private String countryName;
-
     @ManyToOne
-    @JoinColumn(name="region_id")
-    private String regionId;
+    @JoinColumn(name = "region_id")
+    private Region region;
 
     @OneToMany(mappedBy = "country")
     private Set<Location> locations;

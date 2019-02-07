@@ -4,22 +4,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
 
-
 @SpringBootApplication
-public class HrApplicationTest implements CommandLineRunner {
+public class HrApplication implements CommandLineRunner{
     @Autowired
     DataSource dataSource;
 
     public static void main(String[] args) {
-        SpringApplication.run(HrApplicationTest.class, args);
+        SpringApplication.run(HrApplication.class, args);
     }
 
     @Override
-    public void run(String... args) throws Exception {  // 가변형필드
-        System.out.println("run 메소드가 실행됩니다.");
+    public void run(String... args) throws Exception {
+        if(dataSource != null)
+            System.out.println(dataSource.getClass().getName());
+        System.out.println("run메소드가 실행됩니다.");
     }
 }
 

@@ -31,8 +31,8 @@ public class Employee {
     @JoinColumn(name = "manager_id")
     private Employee manager;
 
-//    @OneToMany(mappedBy = "manager")
-//    private Set<Employee> employees;
+    @OneToMany(mappedBy = "manager")
+    private Set<Employee> employees;
 
     @ManyToOne
     @JoinColumn(name = "department_id")
@@ -40,6 +40,6 @@ public class Employee {
 
     public Employee(){
         hireDate = new Date();
-//        employees = new HashSet<>();
+        employees = new HashSet<>();
     }
 }

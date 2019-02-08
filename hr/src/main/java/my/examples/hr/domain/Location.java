@@ -17,7 +17,7 @@ public class Location {
     private String postalCode;
     private String city;
     private String stateProvince;
-    @ManyToOne
-    @JoinColumn(name = "country_id")
-    private Country country;
+//    @ManyToOne
+//    @JoinColumn(name = "country_id")
+//    private Country country;
 }

@@ -31,10 +31,10 @@ public class DepartmentRepositoryTest {
             if(department.getDepartmentId() != 60)
                 continue;
             System.out.println(department.getDepartmentName() );
-            Set<Employee> employees = department.getEmployees();
-            for(Employee e : employees){
-                System.out.println(e.getFirstName());
-            }
+//            Set<Employee> employees = department.getEmployees();
+//            for(Employee e : employees){
+//                System.out.println(e.getFirstName());
+//            }
         }
     }
 }

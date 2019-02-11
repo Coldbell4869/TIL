@@ -19,8 +19,9 @@ public class Country {
     @JoinColumn(name = "region_id")
     private Region region;
 
-//    @OneToMany(mappedBy = "country")
-//    private Set<Location> locations;
+    @OneToMany
+    @JoinColumn(name = "country_id")
+    private Set<Location> locations;
 
     public Country(){
 //        locations = new HashSet<>();

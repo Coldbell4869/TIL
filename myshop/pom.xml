@@ -8,10 +8,10 @@
 		<version>2.1.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>my.examples</groupId>
-	<artifactId>blog</artifactId>
+	<groupId>com.examples</groupId>
+	<artifactId>myshop</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>blog</name>
+	<name>myshop</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -19,7 +19,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- view 템플릿 엔진 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -60,6 +59,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>

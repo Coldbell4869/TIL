@@ -7,7 +7,7 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
+@Entity(name = "Department")
 @Table(name = "departments")
 @Setter
 @Getter
@@ -19,13 +19,12 @@ public class Department {
 //    @JoinColumn(name = "manager_id")
 //    private Employee manager;
 
-//    @OneToMany(mappedBy = "department")
+    //    @OneToMany(mappedBy = "department")
 //    private Set<Employee> employees;
-
     @ManyToOne
     @JoinColumn(name = "location_id")
     private Location location;
-//
+
 //    public Department(){
 //        employees = new HashSet<>();
 //    }

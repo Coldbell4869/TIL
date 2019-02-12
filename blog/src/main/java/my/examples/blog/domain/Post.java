@@ -16,6 +16,11 @@ public class Post {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동증가.
     private Long id;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "account_id")
+    private Account account;
+
     @Column(length = 255)
     private String title;
     @Lob
@@ -29,13 +34,20 @@ public class Post {
     @OneToMany(mappedBy = "post")
     private List<Comment> comments;
 
-    @OneToMany(mappedBy = "post")
+    @OneToMany(mappedBy = "post", cascade ={CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<ImageFile> imageFiles;
 
     public Post(){
         createDate = new Date();
         comments = new ArrayList<>();
         imageFiles = new ArrayList<>();
+    }
+
+    public void addImageFile(ImageFile imageFile) {
+        if(imageFiles == null)
+            imageFiles = new ArrayList();
+        imageFile.setPost(this);
+        imageFiles.add(imageFile);
     }
 
 }

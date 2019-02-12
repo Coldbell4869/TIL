@@ -58,4 +58,10 @@ public class UserController {
     public String welcome(){
         return "users/welcome";
     }
+
+    @GetMapping("/delete")
+    public String delete(@RequestParam(name = "id")Long id){
+        accountService.deleteAccount(id);
+        return "users/welcome";
+    }
 }

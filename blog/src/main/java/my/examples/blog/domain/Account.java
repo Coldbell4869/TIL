@@ -27,7 +27,7 @@ public class Account {
     @Column(name = "nick_name", length = 20)
     private String nickName;
 
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "account_roles",
             joinColumns = {@JoinColumn(name = "account_id",referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}

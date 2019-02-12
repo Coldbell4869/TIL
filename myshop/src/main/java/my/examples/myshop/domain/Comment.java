@@ -1,26 +1,31 @@
-package com.examples.myshop.domain.domain;
+package my.examples.myshop.domain;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Date;
 
 @Entity
-@Table(name = "image_file")
+@Table(name = "comment")
 @Setter
 @Getter
-public class ImageFile {
+public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동증가.
     private Long id;
     @Column(length = 255)
-    private String name; // 오리지널 파일 명. toto.png
-    private long length;
+    private String name;
     @Column(length = 255)
-    private String saveFileName; //   /tmp/2019/02/01/1234-12342134-1234
-    @Column(length = 255)
-    private String mimeType;
+    private String passwd;
+    @Lob
+    private String content;
+    private Date createDate;
     @ManyToOne
     @JoinColumn(name = "post_id")
     private Post post;
+
+    public Comment(){
+        createDate = new Date();
+    }
 }

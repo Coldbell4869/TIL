@@ -36,12 +36,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .logoutSuccessUrl("/main")
                 .permitAll().and()
             .authorizeRequests() // 인가에 대한 설정
+                .antMatchers("/users/delete").permitAll()
                 .antMatchers("/users/join").permitAll()
                 .antMatchers("/users/welcome").permitAll()
                 .antMatchers("/users/login").permitAll()
                 .antMatchers("/users/**").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/main").permitAll()
                 .antMatchers("/admin/**").hasRole("ADMIN")
+                .antMatchers("/posts/**").hasAnyRole("USER", "ADMIN")
                 .anyRequest().fullyAuthenticated()
                 .and()
             .formLogin() // 사용자가 정의하는 로그인 화면을 만들겠다.

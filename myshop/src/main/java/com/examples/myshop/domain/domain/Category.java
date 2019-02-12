@@ -1,4 +1,4 @@
-package my.examples.blog.domain;
+package com.examples.myshop.domain.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,23 +8,25 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "blog")
+@Table(name = "category")
 @Setter
 @Getter
-public class Blog {
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) // 자동증가.
     private Long id;
     @Column(length = 255)
-    private String title;
-    @Column(length = 255)
-    private String url;
+    private String name;
+    private int ordering;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "blog_id")
-    private List<Category> categoryList;
+    private Blog blog;
 
-    public Blog(){
-        categoryList = new ArrayList<>();
+    @OneToMany(mappedBy = "category")
+    private List<Post> posts;
+
+    public Category(){
+        posts = new ArrayList<>();
     }
 }

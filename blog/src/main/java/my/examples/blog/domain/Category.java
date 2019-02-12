@@ -2,6 +2,7 @@ package my.examples.blog.domain;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Controller;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -18,10 +19,6 @@ public class Category {
     @Column(length = 255)
     private String name;
     private int ordering;
-
-    @ManyToOne
-    @JoinColumn(name = "blog_id")
-    private Blog blog;
 
     @OneToMany(mappedBy = "category")
     private List<Post> posts;

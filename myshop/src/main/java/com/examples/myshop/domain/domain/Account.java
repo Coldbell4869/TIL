@@ -1,4 +1,4 @@
-package my.examples.blog.domain;
+package com.examples.myshop.domain.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -34,14 +34,11 @@ public class Account {
     )
     private Set<Role> roles;
 
+    @OneToOne(mappedBy = "account", fetch = FetchType.LAZY)
+    private Blog blog;
+
     public Account(){
         createDate = new Date();
         roles = new HashSet<>();
-    }
-
-    public void addRole(Role role) {
-        if(roles == null)
-            roles = new HashSet<>();
-        roles.add(role);
     }
 }

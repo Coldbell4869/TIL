@@ -1,4 +1,4 @@
-package my.examples.blog.domain;
+package com.examples.myshop.domain.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,8 +20,11 @@ public class Blog {
     @Column(length = 255)
     private String url;
 
-    @OneToMany
-    @JoinColumn(name = "blog_id")
+    @OneToOne
+    @JoinColumn(name = "account_id")
+    private Account account;
+
+    @OneToMany(mappedBy = "blog")
     private List<Category> categoryList;
 
     public Blog(){

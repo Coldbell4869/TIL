@@ -6,23 +6,15 @@
 </head>
 
 <body>
-
-<h1>Hello Spring Boot <span th:text="${name}"></span></h1>
-
-<h2 th:text="${myfault}"></h2>
-
-<h3 th:text="${count}"></h3>
-
+<h1>Hello Spring Boot </h1>
     <table>
         <tbody>
-            <tr th:each = "book : ${list}">
-                <td><a<span th:text="${book.title}"></span></td>
-                <td><a<span th:text="${book.author}"></span></td>
-            </tr>
+        <tr th:each="account : ${list}">
+            <td><span th:text="${account.email}"></span></td>
+            <td><span th:text="${account.name}"></span></td>
+        </tr>
         </tbody>
     </table>
-
-
 </body>
 
 </html>

@@ -43,13 +43,14 @@ public class PostController {
             @RequestParam(name = "title") String title,
             @RequestParam(name = "content") String content,
             @RequestParam(name = "categoryId") Long categoryId,
-            @RequestParam(name = "image") MultipartFile[] images
+            @RequestParam(name = "image") MultipartFile[] images    //파일은 MultipartFile..!
     ) {
         Assert.hasText(title, "제목을 입력하세요.");
         Assert.hasText(content, " 내용을 입력하세요.");
 
-        //  로그인을 한 사용자 정보는 Security필터에서 SecurityContextHolder의 ThreadLocal에 저장된다.
-        // 그래서 같은 쓰레드상이라면 로그인한 정보를 읽어들일 수 잇다.
+        //  로그인을 한 사용자 정보는 Security필터에서 SecurityContextHolder의 ThreadLocal에 저장된다. *중요
+        // 그래서 같은 쓰레드상이라면 로그인한 정보를 읽어들일 수 있다.
+        // authentication.principal
         BlogSecurityUser securityUser =
                 (BlogSecurityUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 

@@ -1,8 +1,11 @@
 package my.examples.blog.controller;
 
 import my.examples.blog.domain.Account;
+import my.examples.blog.domain.Post;
 import my.examples.blog.service.AccountService;
+import my.examples.blog.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.ui.Model;
@@ -15,13 +18,16 @@ import java.util.List;
 @Controller
 public class MainController {
     @Autowired
-    AccountService accountService;
+    PostService postService;
 
     @GetMapping("/main")
-    public String main(Model model){
-        List<Account> list = accountService.getAccountAll();
-        model.addAttribute("list", list);
+    public String main(
+        @RequestParam(name = "page", required = false, defaultValue = "1") int page,
+        @RequestParam(name = "searchKind", required = false) String searchKind,
+        @RequestParam(name = "searchStr", required = false) String searchStr,
+            Model model){
+//            Page<Post> pagePost = postService.getPosts(page, searchKind, searchStr);
+//            model.addAttribute("pagePost", pagePost);
         return "index";
     }
-
 }

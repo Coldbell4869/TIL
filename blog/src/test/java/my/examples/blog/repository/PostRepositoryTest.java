@@ -12,6 +12,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.persistence.Temporal;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @DataJpaTest
@@ -32,6 +33,19 @@ public class PostRepositoryTest {
         for(Post post : posts){
             System.out.println(post.getTitle());
             System.out.println(post.getCategory().getName());
+        }
+    }
+
+    @Test
+    public void getPosts2() throws Exception{
+        long count =
+                postRepository.getPostsCount(null, "TITLE_SEARCH", "title");
+        System.out.println(count);
+        List<Post> posts =
+                postRepository.getPosts(2L, 0, 5, "Title_SEARCH", "title");
+//        Assert.assertEqulsa(5, posts.getSize());
+        for(Post post : posts){
+            System.out.println(post.getTitle() + " , " + post.getCategory().getName());
         }
     }
 }

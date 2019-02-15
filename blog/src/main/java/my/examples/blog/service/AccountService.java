@@ -27,6 +27,7 @@ public class AccountService {
         account.addRole(role);
         return accountRepository.save(account);
     }
+
     @Transactional
     public void deleteAccount(Long id) {
         accountRepository.deleteById(id);

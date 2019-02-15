@@ -1,0 +1,131 @@
+package my.examples.blog.controller;
+
+import lombok.RequiredArgsConstructor;
+import my.examples.blog.domain.Category;
+import my.examples.blog.domain.ImageFile;
+import my.examples.blog.domain.Post;
+import my.examples.blog.security.BlogSecurityUser;
+import my.examples.blog.service.CategoryService;
+import my.examples.blog.service.ImageFileService;
+import my.examples.blog.service.PostService;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.util.Assert;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
+import java.security.PrivateKey;
+import java.util.Calendar;
+import java.util.List;
+import java.util.UUID;
+
+@Controller
+@RequestMapping("/posts")
+@RequiredArgsConstructor
+public class PostController {
+    private final CategoryService categoryService;
+    private final PostService postService;
+    private final ImageFileService imageFileService;
+
+    @GetMapping("/images/{id}")
+    @ResponseBody // 컨트롤러 안에서 직접 response를 이용하여 결과를 출력할 때 사용
+    public void downloadImage(
+            @PathVariable(name = "id") Long id,
+            HttpServletResponse response
+    ) {
+        ImageFile imageFile = imageFileService.getImageFile(id);
+        response.setContentType(imageFile.getMimeType());
+
+        try(FileInputStream fis = new FileInputStream(imageFile.getSaveFileName());
+            OutputStream out = response.getOutputStream()
+        ){
+            byte[] buffer = new byte[1024];
+            int readCount = 0;
+
+            while((readCount = fis.read(buffer)) != -1){
+                out.write(buffer, 0, readCount);
+            }
+        }catch(Exception ex){
+            ex.printStackTrace();
+        }
+    }
+
+    @GetMapping("/write")
+    public String writeform(Model model) {
+        List<Category> categories = categoryService.getAll();
+        model.addAttribute("categories", categories);
+        return "posts/writeform";
+    }
+
+    @PostMapping("/write")
+    public String write(
+            @RequestParam(name = "title") String title,
+            @RequestParam(name = "content") String content,
+            @RequestParam(name = "categoryId") Long categoryId,
+            @RequestParam(name = "image") MultipartFile[] images    //파일은 MultipartFile..!
+    ) {
+        Assert.hasText(title, "제목을 입력하세요.");
+        Assert.hasText(content, " 내용을 입력하세요.");
+
+        //  로그인을 한 사용자 정보는 Security필터에서 SecurityContextHolder의 ThreadLocal에 저장된다. *중요
+        // 그래서 같은 쓰레드상이라면 로그인한 정보를 읽어들일 수 있다.
+        // authentication.principal
+        BlogSecurityUser securityUser =
+                (BlogSecurityUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+
+        Post post = new Post();
+        post.setContent(content);
+        post.setTitle(title);
+
+        if (images != null && images.length > 0) {
+            for (MultipartFile image : images) {
+                ImageFile imageFile = new ImageFile();
+                imageFile.setLength(image.getSize());
+                imageFile.setMimeType(image.getContentType());
+                imageFile.setName(image.getOriginalFilename());
+                // 파일 저장
+                // /tmp/2019/2/12/123421-12341234-12341234-123423142
+                String saveFileName = saveFile(image);
+
+                imageFile.setSaveFileName(saveFileName); // save되는 파일명
+                post.addImageFile(imageFile);
+            }
+        }
+
+        postService.addPost(post, categoryId, securityUser.getId());
+
+        return "redirect:/main";
+    }
+
+    private String saveFile(MultipartFile image) {
+        String dir = "/tmp/";
+        Calendar calendar;
+        calendar = Calendar.getInstance();
+        dir = dir + calendar.get(Calendar.YEAR);
+        dir = dir + "/";
+        dir = dir + (calendar.get(Calendar.MONTH) + 1);
+        dir = dir + "/";
+        dir = dir + calendar.get(Calendar.DAY_OF_MONTH);
+        dir = dir + "/";
+        File dirFile = new File(dir);
+        dirFile.mkdirs(); // 디렉토리가 없을 경우 만든다. 퍼미션이 없으면 생성안될 수 있다.
+        dir = dir + UUID.randomUUID().toString();
+
+        try (FileOutputStream fos = new FileOutputStream(dir);
+             InputStream in = image.getInputStream()
+        ) {
+            byte[] buffer = new byte[1024];
+            int readCount = 0;
+            while ((readCount = in.read(buffer)) != -1) {
+                fos.write(buffer, 0, readCount);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+
+        return dir;
+    }
+}

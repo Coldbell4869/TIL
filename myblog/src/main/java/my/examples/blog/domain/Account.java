@@ -1,4 +1,4 @@
-package my.examples.shop.domain;
+package my.examples.blog.domain;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -27,18 +27,21 @@ public class Account {
     @Column(name = "nick_name", length = 20)
     private String nickName;
 
-    @ManyToMany
+    @ManyToMany(cascade = {CascadeType.PERSIST, CascadeType.MERGE})
     @JoinTable(name = "account_roles",
             joinColumns = {@JoinColumn(name = "account_id",referencedColumnName = "id")},
             inverseJoinColumns = {@JoinColumn(name = "role_id", referencedColumnName = "id")}
     )
     private Set<Role> roles;
 
-    @OneToOne(mappedBy = "account")
-    private Shop shop;
-
     public Account(){
         createDate = new Date();
         roles = new HashSet<>();
+    }
+
+    public void addRole(Role role) {
+        if(roles == null)
+            roles = new HashSet<>();
+        roles.add(role);
     }
 }

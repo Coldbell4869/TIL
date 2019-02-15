@@ -1,4 +1,4 @@
-package my.examples.shop.domain;
+package my.examples.blog.domain;
 
 import lombok.Getter;
 import lombok.Setter;

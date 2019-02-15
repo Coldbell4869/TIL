@@ -6,15 +6,9 @@
 </head>
 
 <body>
-<h1>Hello Spring Boot </h1>
-    <table>
-        <tbody>
-        <tr th:each="account : ${list}">
-            <td><span th:text="${account.email}"></span></td>
-            <td><span th:text="${account.name}"></span></td>
-        </tr>
-        </tbody>
-    </table>
+
+<h1>Hello Spring Boot <span th:text="${name}"></span></h1>
+
 </body>
 
 </html>

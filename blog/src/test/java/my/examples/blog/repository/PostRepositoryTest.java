@@ -42,8 +42,8 @@ public class PostRepositoryTest {
                 postRepository.getPostsCount(null, "TITLE_SEARCH", "title");
         System.out.println(count);
         List<Post> posts =
-                postRepository.getPosts(2L, 0, 5, "Title_SEARCH", "title");
-//        Assert.assertEqulsa(5, posts.getSize());
+                postRepository.getPosts(2L, 0, 5, "TITLE_SEARCH", "title");
+//        Assert.assertEquals(5, posts.getSize());
         for(Post post : posts){
             System.out.println(post.getTitle() + " , " + post.getCategory().getName());
         }

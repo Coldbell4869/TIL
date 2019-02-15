@@ -6,14 +6,13 @@
 <body>
 <h1>post writeform</h1>
 
-<!--// 파일업로드 시에는 enctype을 지정해야 한다-->
 <form method="post" action="/posts/write" enctype="multipart/form-data">
     이름 : <span th:text="${#authentication.principal.name}"></span><br>
     title : <input type="text" name="title"><br>
     content : <textarea name="content" cols="50" rows="5"></textarea><br>
     category : <select name="categoryId">
-    <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
-</select><br>
+        <option th:each="category : ${categories}" th:value="${category.id}" th:text="${category.name}"></option>
+    </select><br>
     image1 : <input type="file" name="image"><br>
     image2 : <input type="file" name="image"><br>
     <input

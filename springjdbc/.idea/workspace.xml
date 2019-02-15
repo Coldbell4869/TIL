@@ -7,10 +7,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc5cc1c1-267b-48a0-ac75-bcb0c46c0e1e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/ImageFileRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/ImageFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../blog/src/main/resources/static/css/blog-home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../blog/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/domain/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/domain/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/dto/JoinForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/dto/JoinForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/custom/PostRepositoryCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/custom/PostRepositoryCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/custom/PostRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/repository/custom/PostRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/java/my/examples/blog/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/resources/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/main/resources/templates/posts/writeform.html" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/main/resources/templates/posts/writeform.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../blog/src/test/java/my/examples/blog/repository/PostRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../blog/src/test/java/my/examples/blog/repository/PostRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ioexam" beforeDir="false" afterPath="$PROJECT_DIR$/../ioexam" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../javaexam" beforeDir="false" afterPath="$PROJECT_DIR$/../javaexam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbcboard/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shop/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../shop/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,10 +59,15 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginform.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/service/BoardServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+            <state relative-caret-position="655">
+              <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#604#605#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -60,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>목록</find>
       <find>getBoard</find>
       <find>war</find>
       <find>list</find>
@@ -90,6 +113,7 @@
       <find>login</find>
       <find>join</find>
       <find>security</find>
+      <find>spring</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,6 +188,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,24 +254,6 @@
               <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springjdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springjdbc" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springjdbc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -286,14 +293,13 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549450300605" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550132969717" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -447,15 +453,56 @@
         </option>
       </method>
     </configuration>
+    <configuration name="loginform.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/views/loginform.jsp" />
+      <deployment>
+        <artifact name="springjdbc:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/springjdbc_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="loginform_jsp_springjdbc" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springjdbc:war exploded" />
+        </option>
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.BoardDaoTestApplication" />
       <item itemvalue="Application.SpringApplication" />
       <item itemvalue="Application.UserServiceTestApplication" />
       <item itemvalue="JavaScript Debug.board.jsp" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.37 Spring" />
+      <item itemvalue="Tomcat Server.loginform.jsp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Tomcat Server.loginform.jsp" />
         <item itemvalue="Application.UserServiceTestApplication" />
         <item itemvalue="JavaScript Debug.board.jsp" />
         <item itemvalue="Application.SpringApplication" />
@@ -484,17 +531,18 @@
       <workItem from="1548909210923" duration="10322000" />
       <workItem from="1549269593971" duration="22567000" />
       <workItem from="1549462076962" duration="1646000" />
+      <workItem from="1550132870069" duration="108000" />
+      <workItem from="1550133310197" duration="531000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92293000" />
+    <option name="totallyTimeSpent" value="92932000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49414825" visible="true" weight="0.25178826" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49414825" visible="true" weight="0.25894135" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -633,13 +681,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/delete.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/4.3.14.RELEASE/spring-jdbc-4.3.14.RELEASE.jar!/org/springframework/jdbc/core/namedparam/NamedParameterJdbcTemplate.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
@@ -691,45 +732,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/config/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/dto/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/config/MainWebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#420#421#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -819,16 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/controller/BoardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginformorigin.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -901,25 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/service/BoardServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#564#565#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="99" column="21" selection-start-line="99" selection-start-column="21" selection-end-line="99" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="222">
@@ -934,16 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="32" column="40" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,10 +940,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/config/MainWebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#420#421#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#680#681#0" expanded="true" />
+            <element signature="e#723#724#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/config/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/dto/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-763">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/controller/BoardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="564">
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/loginform.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" column="17" lean-forward="true" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+        <state relative-caret-position="167">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/my/examples/springjdbc/service/BoardServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="655">
+          <caret line="35" column="19" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#604#605#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

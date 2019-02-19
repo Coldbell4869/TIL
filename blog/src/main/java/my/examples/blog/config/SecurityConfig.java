@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
@@ -13,6 +14,7 @@ import java.lang.invoke.MethodType;
 // spring security 설정 파일은 보통
 // WebSecurityConfigurerAdapter 를 상속받아서 만든다.
 @Configuration
+@EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     // 아예 인가처리를 하지 않는 (무시하는 URL설정) - 이미지 or css, javascript
@@ -51,6 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/posts/{id}").permitAll()
                 .antMatchers("/posts/**").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/main").permitAll()
+                .antMatchers("/chatrooms").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .anyRequest().fullyAuthenticated()
                 .and()
